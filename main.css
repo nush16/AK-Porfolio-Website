@@ -31,7 +31,7 @@ li {
   align-items: center;
   padding: 0 0.8rem;
   transition: all 0.3s ease 0s;
-  /* border: 1px solid red; */
+  overflow-wrap: nowrap;
 }
 
 a:hover {
@@ -184,11 +184,10 @@ p {
   padding-left: 1rem;
   width: 7.5rem;
   height: 8rem;
-  border: 1px solid black;
 }
 
 /* tiles  */
-.tiles, .tiles2 {
+.tiles, .tiles3, .tiles2 {
   position: relative;
   height: 2rem;
   overflow: hidden;
@@ -196,49 +195,35 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.2rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
-.tiles i, .tiles2 i {
+.tiles i, .tiles3 i, .tiles2 i {
   position: relative;
-  width: 0.8rem;
+  width: 1.5rem;
   height: 0.8rem;
   background: white;
 }
 
 section i:nth-child(5n+1) {
-  -webkit-animation: animate 2s linear infinite, animatetile 5s linear infinite;
-          animation: animate 2s linear infinite, animatetile 5s linear infinite;
+  -webkit-animation: animate 2s linear infinite, animatetile 7s linear infinite;
+          animation: animate 2s linear infinite, animatetile 7s linear infinite;
   -webkit-animation-delay: calc(-1s * var(--i));
           animation-delay: calc(-1s * var(--i));
 }
 
 section i:nth-child(5n+2) {
-  -webkit-animation: animate 3s linear infinite, animatetile 5s linear infinite;
-          animation: animate 3s linear infinite, animatetile 5s linear infinite;
-  -webkit-animation-delay: calc(-1.5s * var(--i));
-          animation-delay: calc(-1.5s * var(--i));
-}
-
-section i:nth-child(5n+3) {
-  -webkit-animation: animate 4s linear infinite, animatetile 5s linear infinite;
-          animation: animate 4s linear infinite, animatetile 5s linear infinite;
+  -webkit-animation: animate 3s linear infinite, animatetile 7s linear infinite;
+          animation: animate 3s linear infinite, animatetile 7s linear infinite;
   -webkit-animation-delay: calc(-2s * var(--i));
           animation-delay: calc(-2s * var(--i));
 }
 
-section i:nth-child(5n+4) {
-  -webkit-animation: animate 5s linear infinite, animatetile 5s linear infinite;
-          animation: animate 5s linear infinite, animatetile 5s linear infinite;
+section i:nth-child(5n+3) {
+  -webkit-animation: animate 4s linear infinite, animatetile 7s linear infinite;
+          animation: animate 4s linear infinite, animatetile 7s linear infinite;
   -webkit-animation-delay: calc(-2.5s * var(--i));
           animation-delay: calc(-2.5s * var(--i));
-}
-
-section i:nth-child(5n+5) {
-  -webkit-animation: animate 6s linear infinite, animatetile 5s linear infinite;
-          animation: animate 6s linear infinite, animatetile 5s linear infinite;
-  -webkit-animation-delay: calc(-3s * var(--i));
-          animation-delay: calc(-3s * var(--i));
 }
 
 @-webkit-keyframes animate {
@@ -281,6 +266,11 @@ section i:nth-child(5n+5) {
   }
 }
 .tiles2 {
+  height: 1rem;
+  margin-top: 0.8rem;
+}
+
+.tiles3 {
   height: 1rem;
   margin-top: 0.8rem;
 }
