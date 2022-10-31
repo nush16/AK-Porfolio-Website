@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+// Navigation Bar
+@import "./components/_navigation.scss";
+
+// SCSS for body of index page
+@import "./components/_index_body.scss";
+
+// Tiles
+@import "./components/_tiles.scss";
+
+// SCSS for footer of index page
+@import "./components/index_footer.scss";

@@ -1,0 +1,123 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: aquamarine;
+}
+
+.title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding-top: 1rem; */
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    /* border: 1px solid red; */
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 500;
+    font-size: 2rem;
+    color: black;
+}
+
+p {
+    font-family: 'Noto Sans Mono', monospace;
+    margin-left: 1rem;
+    font-weight: 100;
+    font-size: 0.7rem;
+    color: black;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+#ptitle {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 60% 40%;
+}
+
+.nush {
+    /* border: 1px solid red; */
+    padding-right: 1rem;
+    width: 7.5rem;
+    height: 8rem;
+    border-radius: 4rem;
+    margin-top: -1rem;
+}
+
+.intro {
+    background-color: white;
+   padding-top: 2rem;
+}
+
+.build {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    /* border: 1px solid red; */
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.write {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    /* border: 1px solid red; */
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.pbuild {
+        font-family: 'Noto Sans Mono', monospace;
+        margin-left: 1rem;
+        font-weight: 100;
+        font-size: 0.7rem;
+        color: black;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+
+.pwrite {
+        font-family: 'Noto Sans Mono', monospace;
+        margin-left: 1rem;
+        font-weight: 100;
+        font-size: 0.7rem;
+        color: black;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+
+.pbuild {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 43% 56%;
+}
+
+.pwrite {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 56% 43%;
+}
+#img_build {
+    padding-right: 1rem;
+    width: 7.5rem;
+    height: 8rem;
+    border: 1px solid black;
+}
+
+#img_write {
+    padding-left: 1rem;
+    width: 7.5rem;
+    height: 8rem;
+    border: 1px solid black;
+}
