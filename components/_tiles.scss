@@ -2,7 +2,7 @@
 
 .tiles {
     position: relative;
-    height: 3rem;
+    height: 2rem;
     overflow: hidden;
     background: white;
     display: flex;
@@ -17,29 +17,28 @@
         background: white;
     }
 }
-    
     section i:nth-child(5n+1) {
-        animation: animate 2s linear infinite, animateBg 5s linear infinite;
+        animation: animate 2s linear infinite, animatetile 5s linear infinite;
         animation-delay: calc(-1s * var(--i));
     }
     
     section i:nth-child(5n+2) {
-        animation: animate 3s linear infinite, animateBg 5s linear infinite;
+        animation: animate 3s linear infinite, animatetile 5s linear infinite;
         animation-delay: calc(-1.5s * var(--i));
     }
     
     section i:nth-child(5n+3) {
-        animation: animate 4s linear infinite, animateBg 5s linear infinite;
+        animation: animate 4s linear infinite, animatetile 5s linear infinite;
         animation-delay: calc(-2s * var(--i));
     }
     
     section i:nth-child(5n+4) {
-        animation: animate 5s linear infinite, animateBg 5s linear infinite;
+        animation: animate 5s linear infinite, animatetile 5s linear infinite;
         animation-delay: calc(-2.5s * var(--i));
     }
     
     section i:nth-child(5n+5) {
-        animation: animate 6s linear infinite, animateBg 5s linear infinite;
+        animation: animate 6s linear infinite, animatetile 5s linear infinite;
         animation-delay: calc(-3s * var(--i));
     }
     
@@ -48,18 +47,23 @@
         background: white;
     }
     60% {
-        background: green;
+        background: pink;
     }
     80%,100% {
         background: white;
     } }
     
-    @keyframes animateBg {
+    @keyframes animatetile {
         0% {
             filter: hue-rotate(0deg);
         }
         100% {
-            filter: hue-rotate(360deg);
+            filter: hue-rotate(180deg);
         }
     }
     
+    .tiles2 {
+        @extend .tiles;
+        height: 1rem;
+        margin-top: 0.8rem;
+    }

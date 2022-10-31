@@ -13,7 +13,7 @@
 #logo {
     cursor: pointer;
     display: flex;
-    justify-content:start;
+    justify-content:flex-start;
     margin-right: 2.5vmax;
     /* border: 1px solid red; */
     width: 3.1rem;
@@ -55,5 +55,12 @@ button:hover {
 
 a:link, a:visited {
     color: black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: cornsilk;
 }
 

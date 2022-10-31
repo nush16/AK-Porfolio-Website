@@ -18,7 +18,7 @@
 #logo {
   cursor: pointer;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   margin-right: 2.5vmax;
   /* border: 1px solid red; */
   width: 3.1rem;
@@ -66,7 +66,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
+  background-color: cornsilk;
 }
 
 .title {
@@ -188,9 +188,9 @@ p {
 }
 
 /* tiles  */
-.tiles {
+.tiles, .tiles2 {
   position: relative;
-  height: 3rem;
+  height: 2rem;
   overflow: hidden;
   background: white;
   display: flex;
@@ -199,7 +199,7 @@ p {
   gap: 0.2rem;
   flex-wrap: wrap;
 }
-.tiles i {
+.tiles i, .tiles2 i {
   position: relative;
   width: 0.8rem;
   height: 0.8rem;
@@ -207,36 +207,36 @@ p {
 }
 
 section i:nth-child(5n+1) {
-  -webkit-animation: animate 2s linear infinite, animateBg 5s linear infinite;
-          animation: animate 2s linear infinite, animateBg 5s linear infinite;
+  -webkit-animation: animate 2s linear infinite, animatetile 5s linear infinite;
+          animation: animate 2s linear infinite, animatetile 5s linear infinite;
   -webkit-animation-delay: calc(-1s * var(--i));
           animation-delay: calc(-1s * var(--i));
 }
 
 section i:nth-child(5n+2) {
-  -webkit-animation: animate 3s linear infinite, animateBg 5s linear infinite;
-          animation: animate 3s linear infinite, animateBg 5s linear infinite;
+  -webkit-animation: animate 3s linear infinite, animatetile 5s linear infinite;
+          animation: animate 3s linear infinite, animatetile 5s linear infinite;
   -webkit-animation-delay: calc(-1.5s * var(--i));
           animation-delay: calc(-1.5s * var(--i));
 }
 
 section i:nth-child(5n+3) {
-  -webkit-animation: animate 4s linear infinite, animateBg 5s linear infinite;
-          animation: animate 4s linear infinite, animateBg 5s linear infinite;
+  -webkit-animation: animate 4s linear infinite, animatetile 5s linear infinite;
+          animation: animate 4s linear infinite, animatetile 5s linear infinite;
   -webkit-animation-delay: calc(-2s * var(--i));
           animation-delay: calc(-2s * var(--i));
 }
 
 section i:nth-child(5n+4) {
-  -webkit-animation: animate 5s linear infinite, animateBg 5s linear infinite;
-          animation: animate 5s linear infinite, animateBg 5s linear infinite;
+  -webkit-animation: animate 5s linear infinite, animatetile 5s linear infinite;
+          animation: animate 5s linear infinite, animatetile 5s linear infinite;
   -webkit-animation-delay: calc(-2.5s * var(--i));
           animation-delay: calc(-2.5s * var(--i));
 }
 
 section i:nth-child(5n+5) {
-  -webkit-animation: animate 6s linear infinite, animateBg 5s linear infinite;
-          animation: animate 6s linear infinite, animateBg 5s linear infinite;
+  -webkit-animation: animate 6s linear infinite, animatetile 5s linear infinite;
+          animation: animate 6s linear infinite, animatetile 5s linear infinite;
   -webkit-animation-delay: calc(-3s * var(--i));
           animation-delay: calc(-3s * var(--i));
 }
@@ -246,7 +246,7 @@ section i:nth-child(5n+5) {
     background: white;
   }
   60% {
-    background: green;
+    background: pink;
   }
   80%, 100% {
     background: white;
@@ -258,31 +258,37 @@ section i:nth-child(5n+5) {
     background: white;
   }
   60% {
-    background: green;
+    background: pink;
   }
   80%, 100% {
     background: white;
   }
 }
-@-webkit-keyframes animateBg {
+@-webkit-keyframes animatetile {
   0% {
     filter: hue-rotate(0deg);
   }
   100% {
-    filter: hue-rotate(360deg);
+    filter: hue-rotate(180deg);
   }
 }
-@keyframes animateBg {
+@keyframes animatetile {
   0% {
     filter: hue-rotate(0deg);
   }
   100% {
-    filter: hue-rotate(360deg);
+    filter: hue-rotate(180deg);
   }
 }
+.tiles2 {
+  height: 1rem;
+  margin-top: 0.8rem;
+}
+
 footer {
   display: inline-block;
   justify-content: center;
+  margin-top: 0.5rem;
   margin-left: 30%;
   margin-bottom: 0%;
   text-align: center;
@@ -291,5 +297,5 @@ footer {
 }
 
 .copyright {
-  margin-top: 0.8rem;
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
