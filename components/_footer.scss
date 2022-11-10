@@ -1,0 +1,134 @@
+// SCSS for Footer
+
+// hover effect over social icons
+.socials a.socials_img:hover{
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%)
+}
+
+//  stnadard social icons brightness
+.socials_img {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%)
+}
+
+
+
+// mobile view (320px)
+@media (min-width:320px) {
+
+// mobile - footer positioning 
+    footer {
+    display: inline-block;
+    justify-content: center;
+    height: 8%;
+    position: relative;
+    margin-left: 30%;
+    margin-bottom: 0%;
+    text-align: center;
+    font-family: 'Noto Sans Mono', monospace;
+    left: 0;
+    bottom: 0;
+    margin-top: auto;
+
+    // mobile - footer text style
+.footer_contact {
+    font-size: 0.7em;
+    color: white;
+    }
+
+    .socials {
+        padding-top: 0.5rem;
+    }
+
+     // mobile - footer text style
+    .copyright {
+        margin-top: 0.5rem;
+        color: white;
+    }
+    }
+}
+    
+// tablet mode (820px)
+@media (min-width:820px) {
+    
+    footer {
+        display: inline-block;
+        justify-content: center;
+        height: 8%;
+        position: relative;
+        margin-left: 40%;
+        margin-bottom: 0%;
+        text-align: center;
+        font-family: 'Noto Sans Mono', monospace;
+        left: 0;
+        bottom: 0%;
+
+    .footer_contact {
+        font-size: 1.1rem;
+        color: white;
+        }
+
+        .socials {
+            padding-top: 0.7rem;
+        }
+    
+        .copyright {
+            margin-top: 0.7rem;
+            color: white;
+        }
+    }
+}
+
+// desktop view (992px)
+@media (min-width:992px) {
+        footer {
+            display: inline-block;
+            justify-content: center;
+            height: 3%;
+            position: relative;
+            margin-left: 40%;
+            margin-bottom: 0%;
+            margin-top: 1.5rem;
+            text-align: center;
+            font-family: 'Noto Sans Mono', monospace;
+            left: 0;
+            bottom: 0%;
+    
+        .footer_contact {
+            font-size: 1.2rem;
+            color: white;
+            }
+    
+            .socials {
+                padding-top: 0.7rem;
+            }
+        
+            .copyright {
+                margin-top: 0.7rem;
+            }
+            .linkedin {
+                width: 4rem;
+                height: 4rem;
+            }
+            .twitter {
+                width: 4rem;
+                height: 4rem;
+
+            }
+            .github {
+                width: 4rem;
+                height: 4rem;
+
+            }
+            .facebook {
+                width: 4rem;
+                height: 4rem;
+
+            }
+            .copyright {
+                font-size: 1rem;
+                color: white;
+            }
+        }
+    }

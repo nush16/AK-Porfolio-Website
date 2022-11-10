@@ -1,10 +1,13 @@
-/* tiles  */
+ // SCSS for moving tiles
+
+// mobile view (320px)
+@media (min-width:320px) {
 
 .tiles {
     position: relative;
-    height: 2rem;
+    height: 1rem;
     overflow: hidden;
-    background: white;
+    background: rgba(38, 54, 45, 1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,11 +15,12 @@
     flex-wrap: wrap;
     i {
         position: relative;
-        width: 1.5rem;
-        height: 0.8rem;
-        background: white;
+        width: 1rem;
+        height: 1rem;
+        background: rgba(38, 54, 45, 1);
     }
 }
+
     section i:nth-child(5n+1) {
         animation: animate 2s linear infinite, animatetile 7s linear infinite;
         animation-delay: calc(-1s * var(--i));
@@ -34,14 +38,15 @@
     
     @keyframes animate {
     0%,20% {
-        background: white;
+        background: rgba(38, 54, 45, 1);
     }
     60% {
-        background: pink;
+        background: rgb(167, 209, 167);
     }
     80%,100% {
-        background: white;
-    } }
+        background: rgba(38, 54, 45, 1);
+    } 
+}
     
     @keyframes animatetile {
         0% {
@@ -54,12 +59,26 @@
     
     .tiles2 {
         @extend .tiles;
-        height: 1rem;
-        margin-top: 0.8rem;
+        height: 3rem;
+        margin-top: 2rem;
     }
 
     .tiles3 {
         @extend .tiles;
-        height: 1rem;
+        height: 4rem;
         margin-top: 0.8rem;
     }
+
+    .tiles4 {
+        @extend .tiles;
+        height: 8rem;
+        margin-top: 0.8rem;
+
+    }
+
+    .tiles_contact {
+        @extend .tiles;
+        height: 6rem;
+        margin-top: 0.8rem;
+    }
+}

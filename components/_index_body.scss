@@ -1,118 +1,410 @@
+ // SCSS for Home page
 
-
-.title {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* padding-top: 1rem; */
-    margin-left: 1rem;
-    padding-bottom: 1rem;
-    /* border: 1px solid red; */
-    font-family: 'Noto Sans Mono', monospace;
-    font-weight: 500;
-    font-size: 2rem;
-    color: black;
+//  rainbow border style
+@mixin border {
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    background-image: linear-gradient(
+        45deg,
+        hsl(240deg 100% 20%) 0%,
+        hsl(322deg 100% 31%) 9%,
+        hsl(355deg 89% 58%) 18%,
+        hsl(39deg 100% 50%) 27%,
+        hsl(58deg 100% 48%) 36%,
+        hsl(66deg 100% 48%) 45%,
+        hsl(76deg 100% 49%) 55%,
+        hsl(87deg 100% 50%) 64%,
+        hsl(132deg 93% 58%) 73%,
+        hsl(158deg 100% 46%) 82%,
+        hsl(171deg 100% 42%) 91%,
+        hsl(180deg 73% 44%) 100%
+        );
+    z-index: -1;
 }
 
-p {
-    font-family: 'Noto Sans Mono', monospace;
-    margin-left: 1rem;
-    font-weight: 100;
-    font-size: 0.7rem;
-    color: black;
-    align-items: center;
-    /* border: 1px solid red; */
-}
 
-#ptitle {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: 60% 40%;
-}
+// mobile view (320px)
+@media (min-width:320px) {
 
-.nush {
-    /* border: 1px solid red; */
-    padding-right: 1rem;
-    width: 7.5rem;
-    height: 8rem;
-    border-radius: 4rem;
-    margin-top: -1rem;
-}
+// mobile - intro title for homepage
+.intro_title {
+    width: 90%;
+    margin-left: 2.5%;
 
-.intro {
-    background-color: white;
-   padding-top: 2rem;
-}
-
-.build {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 1rem;
-    margin-left: 1rem;
-    padding-bottom: 1rem;
-    /* border: 1px solid red; */
-    font-family: 'Noto Sans Mono', monospace;
-    font-weight: 300;
-    font-size: 1.2rem;
-    color: black;
-}
-
-.write {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 1rem;
-    margin-left: 1rem;
-    padding-bottom: 1rem;
-    /* border: 1px solid red; */
-    font-family: 'Noto Sans Mono', monospace;
-    font-weight: 300;
-    font-size: 1.2rem;
-    color: black;
-}
-
-.pbuild {
-        font-family: 'Noto Sans Mono', monospace;
-        margin-left: 1rem;
-        font-weight: 100;
-        font-size: 0.7rem;
-        color: black;
-        align-items: center;
-        /* border: 1px solid red; */
+// mobile - grid to split paragaph and img
+    .intro {
+        display: grid;
+        gap: 2.5rem;
+        grid-template-columns: 60% 40%;
     }
 
-.pwrite {
-        font-family: 'Noto Sans Mono', monospace;
-        margin-left: 1rem;
-        font-weight: 100;
-        font-size: 0.7rem;
-        color: black;
-        align-items: center;
-        /* border: 1px solid red; */
+// mobile - intro para for homepage
+    .pintro {
+        padding: 1rem;
+        background-color: rgba(38, 54, 45, 1);
+        box-shadow: 0 0 10px green;
+        border-radius: 20px;
+        position: relative;
+        width: 13rem;
+        height: 6.5rem;
     }
 
-.pbuild {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 43% 56%;
+// mobile - rainbow border for intro para
+    .pintro::before{
+        @include border;
+        margin-top: -1.5rem;
+        margin-left: -1.5rem;
+        width: 14rem;
+        height: 7.5rem;
+    }
+
+// mobile - intro pic for homepage
+    .pic_of_me {
+        padding-right: 0.3rem;
+        width: 7.5rem;
+        height: 8rem;
+        border-radius: 50%;
+        margin-top: -1rem;
+    }
+    }
+
+
+.intro_build {
+    width: 90%;
+    margin-right: 2.5%;
+ 
+    // mobile - grid to split paragaph and img
+    .build {
+        display: grid;
+        gap: 2.5rem;
+        grid-template-columns: 40% 60%;
+    }
+
+    // mobile - image for 'i like to build and design'
+    .img_build {
+        margin-left: 1rem;
+        width: 10rem;
+        height: 9rem;
+    }
+
+    // mobile - para for 'i like to build and design'
+    .pbuild {
+        background-color: rgba(38, 54, 45, 1);
+        border-radius: 20px;
+        padding: 1rem;
+        position: relative;
+        margin-right: 10%;
+        height: 6rem;
+        width: 10rem;
+        margin-top: 8%;
+    }
+
+    // mobile - rainbow border for 'i like to build and design'
+    .pbuild::before{
+        @include border;
+        margin-top: -1.5rem;
+        margin-left: -1.5rem;
+        width: 11rem;
+        height: 7rem;
+    }
+    }
+
+
+.intro_write {
+    width: 90%;
+    margin-right: 2.5%;
+
+     // mobile - grid to split paragaph and img
+    .write {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 60% 40%;
+        margin-right: 4rem;
+    }
+
+    // mobile - para for 'i write interesting things'
+    .pwrite {
+        background-color: rgba(38, 54, 45, 1);
+        border-radius: 20px;
+        padding: 1rem;
+        position: relative;
+        height: 9rem;
+        width: 10rem;
+        margin-top: 5%;
+    }
+
+    // mobile - rainbow border for 'i write interesting things'
+    .pwrite::before{
+        @include border;
+        margin-top: -1.5rem;
+        margin-left: -1.5rem;
+        width: 11rem;
+        height: 10rem;
+    }
+
+    
+    // mobile - image for 'i write interesting things'
+    .img_write {
+        margin-left: 3rem;
+        width: 8.5rem;
+        height: 8rem;
+    }
+    }
 }
 
-.pwrite {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 56% 43%;
-}
-#img_build {
-    padding-right: 1rem;
-    width: 7.5rem;
-    height: 8rem;
-    border: 1px solid black;
-}
+// tablet view (820px)
+@media (min-width:820px) {
 
-#img_write {
-    padding-left: 1rem;
-    width: 7.5rem;
-    height: 8rem;
-    // border: 1px solid black;
-}
+    // tablet - intro title for homepage
+    .intro_title {
+        width: 90%;
+        margin-left: 15%;
+    
+        // tablet - grid to split paragaph and img
+        .intro {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 60% 40%;
+            width: 90%;
+            margin-right: 2.5%;
+            margin-left: 2.5%;
+            margin-top: 1.5rem;
+        }
+    
+        // tablet - intro para for homepage
+        .pintro {
+            padding: 1rem;
+            background-color: rgba(38, 54, 45, 1);
+            border-radius: 20px;
+            position: relative;
+            height: 8rem;
+            width: 21rem;
+            margin-top: 5%;
+        }
+
+        // tablet - rainbow border for intro para
+        .pintro::before{
+            @include border;
+            margin-top: -1.5rem;
+            margin-left: -2.6rem;
+            width: 22rem;
+            height: 9rem;
+        }
+    
+        // tablet - intro pic for homepage
+        .pic_of_me {
+            padding-right: 0.3rem;
+            width: 11.5rem;
+            height: 12rem;
+            border-radius: 4rem;
+            margin-top: -1rem;
+        }
+        }
+
+    .intro_build {
+        width: 90%;
+        margin-left: 15%;
+    
+        // tablet - grid to split paragaph and img
+        .build {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 40% 60%;
+        }
+    
+        // tablet - image for 'i like to build and design'
+        .img_build {
+            width: 14.5rem;
+            height: 14rem;
+        }
+    
+        // tablet - para for 'i like to build and design'
+        .pbuild {
+            background-color: rgba(38, 54, 45, 1);
+            border-radius: 20px;
+            padding: 1rem;
+            position: relative;
+            height: 7.5rem;
+            width: 15rem;
+            margin-top: 11%;
+        }
+
+        // tablet - rainbow border for 'i like to build and design'
+        .pbuild::before{
+            @include border;
+            margin-top: -1.5rem;
+            margin-left: -3.2rem;
+            width: 16rem;
+            height: 8.5rem;
+        }
+        }
+
+    .intro_write {
+        width: 90%;
+        margin-left: 15%;
+    
+        // tablet - grid to split paragaph and img
+        .write {
+            display: grid;
+            gap: 2.5rem;
+            grid-template-columns: 50% 50%;
+        }
+    
+         // tablet - para for 'i write interesting things'
+        .pwrite {
+            background-color: rgba(38, 54, 45, 1);
+            border-radius: 20px;
+            padding: 1rem;
+            position: relative;
+            height: 7.6rem;
+            width: 21rem;
+            margin-top: 1%;
+        }
+    
+        // tablet - rainbow border for 'i write interesting things'
+        .pwrite::before{
+            @include border;
+            margin-top: -1.5rem;
+            margin-left: -2rem;
+            width: 22rem;
+            height: 8.6rem;
+        }
+
+        // tablet - image for 'i write interesting things'
+        .img_write {    
+            width: 12.5rem;
+            height: 12rem;
+        }
+        }
+    }
+
+// desktop view (992px)
+@media (min-width:992px) { 
+
+    // desktop - intro title for homepage
+    .intro_title {
+        width: 90%;
+    
+        // desktop - grid to split paragaph and img
+        .intro {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 50% 50%;
+            width: 90%;
+            margin-right: 2.5%;
+            margin-left: 2.5%;
+            margin-top: 4.5rem;
+        }
+
+        // desktop - intro para for homepage
+        .pintro {
+            padding: 1rem;
+            background-color: rgba(38, 54, 45, 1);
+            border-radius: 20px;
+            position: relative;
+            height: 15rem;
+            width: 23rem;
+            margin-top: 1%;
+            margin-left: 27%;
+        }
+
+        // desktop - rainbow border for intro para
+        .pintro::before{
+            @include border;
+            margin-top: -1.5rem;
+            margin-left: -2.1rem;
+            width: 24rem;
+            height: 16rem;
+        }
+        
+        // desktop - intro pic for homepage
+        .pic_of_me {
+            padding-right: 0.3rem;
+            width: 19.5rem;
+            height: 20.6rem;
+            border-radius: 50%;
+            margin-top: -2rem;
+        }
+        }
+
+    .intro_build {
+        width: 90%;
+        margin-left: -2%;
+    
+        // desktop - grid to split paragaph and img
+        .build {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 40% 60%;
+        }
+    
+        // desktop - image for 'i like to build and design'
+        .img_build {
+            width: 19rem;
+            height: 17rem;
+            margin-left: 32%;
+        }
+    
+         // desktop - para for 'i like to build and design'
+        .pbuild {
+            background-color: rgba(38, 54, 45, 1);
+            border-radius: 20px;
+            padding: 1rem;
+            position: relative;
+            height: 11rem;
+            width: 19rem;
+            margin-top: 5%;
+        }
+
+        // desktop - rainbow border for 'i like to build and design'
+        .pbuild::before{
+            @include border;
+            margin-top: -1.5rem;
+            margin-left: -2.8rem;
+            width: 20rem;
+            height: 12rem;
+        }
+    }
+
+    .intro_write {
+        width: 90%;
+        margin-left: 32%;
+
+        // desktop - grid to split paragaph and img
+        .write {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 50% 50%;
+        }
+    
+        // desktop - para for 'i write interesting things'
+        .pwrite {
+            background-color: rgba(38, 54, 45, 1);
+            box-shadow: 0 0 20px rgb(204, 193, 163,0.8);
+            border-radius: 20px;
+            padding: 1rem;
+            position: relative;
+            height: 14rem;
+            width: 22rem;
+            margin-top: 1%;
+            margin-left: 30%;
+        }
+   
+        // desktop - rainbow border for 'i write interesting things'
+        .pwrite::before{
+            @include border;
+            margin-top: -1.5rem;
+            margin-left: -2.0rem;
+            width: 23rem;
+            height: 15rem;
+        }
+    
+        // desktop - image for 'i write interesting things'
+        .img_write {    
+            width: 17.5rem;
+            height: 17rem;
+        }
+
+        }
+    }

@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    
 }
 
-$primary-font-color: pink;
+body {
+    background: rgba(38, 54, 45, 1);
+}
 
 // Navigation Bar
 @import "./components/_navigation.scss";
@@ -17,4 +20,21 @@ $primary-font-color: pink;
 @import "./components/_tiles.scss";
 
 // SCSS for footer of index page
-@import "./components/index_footer.scss";
+@import "./components/_footer.scss";
+
+// SCSS for contact page
+@import "./components/_contact.scss";
+
+// SCSS for about me page
+@import "./components/_about.scss";
+
+// SCSS for projects page
+@import "./components/_projects.scss";
+
+// SCSS for blog page
+@import "./components/_blog.scss";
+
+// Text sizes
+@import "./components/_text_styles.scss";
+
+

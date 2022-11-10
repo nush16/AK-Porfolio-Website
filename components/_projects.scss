@@ -1,0 +1,324 @@
+ // SCSS for projects page
+
+@mixin project_shape {
+    background-color: rgba(38, 54, 45, 0.5);
+    border-radius: 20px;
+}
+
+// mobile view (320px)
+@media (min-width:320px) {
+
+@mixin projectpages_shape {
+    background-color: rgba(38, 54, 45, 0.5);
+    border-radius: 20px;
+    width: 80%;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+@mixin project_frame {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 35% 65%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.project_posts {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+.project1 {
+    @include project_shape;
+    box-shadow: 0 0 30px  hsl(132deg 93% 58%);
+    img {
+        width: 7.1rem;
+        height: 7.1rem;
+        margin-left: 16%;
+    }
+    }
+
+.project2 {
+    @include project_shape; 
+    box-shadow: 0 0 30px  hsl(355deg 89% 58%);
+    img {
+        width: 7.1rem;
+        height: 7.1rem;
+        margin-left: 22%;
+    }
+    }
+
+.project3 {
+    @include project_shape;
+    box-shadow: 0 0 30px   hsl(158deg 100% 46%);
+    img {
+        width: 8.7rem;
+        height: 8.7rem;
+        margin-left: 1rem;
+        margin-top: -0.8rem;
+    }
+    }
+    }
+
+.project1_layout {
+        @include project_frame;
+        .project1_img {
+            width: 9rem;
+            height: 9rem;
+            margin-top: 2rem;
+            margin-right: 1%;
+            }
+        .about_project1 {
+            @include projectpages_shape; 
+            box-shadow: 0 0 20px  hsl(132deg 93% 58%);
+    }
+    }
+    
+.project2_layout {
+        @include project_frame;
+        .project2_img {
+            width: 9rem;
+            height: 9rem;
+            margin-top: 2rem;
+            margin-right: 1%;
+            }
+        .about_project2 {
+            @include projectpages_shape; 
+            box-shadow: 0 0 20px  hsl(355deg 89% 58%);
+            }
+    }
+
+.project3_layout {
+        @include project_frame;
+        .project3_img {
+            width: 9rem;
+            height: 9rem;
+            margin-top: 2rem;
+            margin-right: 1%;
+            }
+        .about_project3 {
+            @include projectpages_shape; 
+            box-shadow: 0 0 20px   hsl(158deg 100% 46%);
+            }
+    }
+}
+
+// tablet view (820px)
+@media (min-width:820px) {
+
+    @mixin projectpages_shape {
+        background-color: rgba(38, 54, 45, 0.5);
+        border-radius: 20px;
+        width: 80%;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    
+    @mixin project_frame {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 35% 65%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .project_posts {
+        display: grid;
+        gap: 3%;
+        grid-template-columns: 1fr 1fr;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-bottom: 4rem;
+    
+    .project1 {
+        @include project_shape;
+        box-shadow: 0 0 40px  hsl(132deg 93% 58%);
+        img {
+            width: 10rem;
+            height: 10rem;
+            margin-left: 30%;
+        }
+        }
+    
+    .project2 {
+        @include project_shape; 
+        box-shadow: 0 0 40px  hsl(355deg 89% 58%);
+        img {
+            width: 10rem;
+            height: 10rem;
+            margin-left: 34%;
+        }
+        }
+    
+    .project3 {
+        @include project_shape;
+        box-shadow: 0 0 40px   hsl(158deg 100% 46%);
+        img {
+            width: 10rem;
+            height: 10rem;
+            margin-left: 25%;
+            margin-top: -0.8rem;
+        }
+        }
+        }
+    
+    .project1_layout {
+            @include project_frame;
+            .project1_img {
+                width: 10rem;
+                height: 10rem;
+                margin-left: 30%;
+                }
+            .about_project1 {
+                @include projectpages_shape; 
+                box-shadow: 0 0 20px  hsl(132deg 93% 58%);
+        }
+        }
+        
+    .project2_layout {
+            @include project_frame;
+            .project2_img {
+                width: 10rem;
+                height: 10rem;
+                margin-left: 30%;
+                }
+            .about_project2 {
+                @include projectpages_shape; 
+                box-shadow: 0 0 20px  hsl(355deg 89% 58%);
+                }
+        }
+    
+    .project3_layout {
+            @include project_frame;
+            .project3_img {
+                width: 10rem;
+                height: 10rem;
+                margin-top: 2rem;
+                margin-left: 20%;
+                }
+            .about_project3 {
+                @include projectpages_shape; 
+                box-shadow: 0 0 20px   hsl(158deg 100% 46%);
+                }
+        }
+
+}
+
+// desktop view (992px)
+@media (min-width:992px) {
+
+    @mixin projectpages_shape {
+        background-color: rgba(38, 54, 45, 0.5);
+        border-radius: 20px;
+        width: 80%;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    
+    @mixin project_frame {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 35% 65%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+    
+    .project_posts {
+        display: grid;
+        gap: 3%;
+        grid-template-columns: 1fr 1fr;
+        width: 85%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    
+    .project1 {
+        @include project_shape;
+        box-shadow: 0 0 40px  hsl(132deg 93% 58%);
+        img {
+            width: 14rem;
+            height: 14rem;
+            margin-left: 30%;
+        }
+        }
+    
+    .project2 {
+        @include project_shape; 
+        box-shadow: 0 0 40px  hsl(355deg 89% 58%);
+        img {
+            width: 14rem;
+            height: 14rem;
+            margin-left: 34%;
+        }
+        }
+    
+    .project3 {
+        @include project_shape;
+        box-shadow: 0 0 40px   hsl(158deg 100% 46%);
+        margin-top: 0.5rem;
+        img {
+            width: 14rem;
+            height: 14rem;
+            margin-left: 34%;
+            margin-top: -0.8rem;
+        }
+        }
+        }
+    
+    .project1_layout {
+            @include project_frame;
+            .project1_img {
+                width: 19rem;
+                height: 19rem;
+                margin-top: 2rem;
+                margin-left: 20%;
+                }
+            .about_project1 {
+                @include projectpages_shape; 
+                box-shadow: 0 0 20px  hsl(132deg 93% 58%);
+        }
+        }
+        
+    .project2_layout {
+            @include project_frame;
+            .project2_img {
+                width: 19rem;
+                height: 19rem;
+                margin-top: 2rem;
+                margin-left: 20%;
+                }
+            .about_project2 {
+                @include projectpages_shape; 
+                box-shadow: 0 0 20px  hsl(355deg 89% 58%);
+                }
+        }
+    
+    .project3_layout {
+            @include project_frame;
+            .project3_img {
+                width: 19rem;
+                height: 19rem;
+                margin-top: 2rem;
+                margin-left: 20%;
+                }
+            .about_project3 {
+                @include projectpages_shape;
+                box-shadow: 0 0 20px   hsl(158deg 100% 46%); 
+                }
+        }
+
+        .project_posts a.project_link:hover{
+            -webkit-filter: brightness(70%);
+            filter: brightness(70%)
+        }
+    }

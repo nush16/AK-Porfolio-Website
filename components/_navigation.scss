@@ -1,25 +1,47 @@
-// Navigation Bar
+ // SCSS for navigation bar
 
-.background {
-    position: relative;
-    width: 100%;
-    height: 10vh;
-    overflow: hidden;
-    background-size: contain;
-    background-position: initial;
-    /* border: 1px solid red; */
+//  hover button effect over 'contact'
+button:hover {
+    background-color: green;
+    color: white;
 }
 
+// link colour
+a:link, a:visited {
+    color: white;
+}
+
+.header a.nav_link:hover{
+    color: green;
+}
+
+// hover effect over logo
+.header a#logo:hover {
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%)
+}
+
+// header background color
+@mixin header_color {
+    background: rgb(38,54,45);
+background: linear-gradient(90deg, rgba(38,54,45,1) 0%, rgba(50,54,60,1) 100%);;
+}
+
+// mobile view (320px)
+@media (min-width:320px) {
+
+
+// mobile - logo img style
 #logo {
     cursor: pointer;
     display: flex;
     justify-content:flex-start;
-    margin-right: 2.5vmax;
-    /* border: 1px solid red; */
-    width: 3.1rem;
-    height: 3.1rem;
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-left: 2%;
 }
 
+// mobile - style for navigation bar list
 li {
     list-style: none;
     display: inline-block;
@@ -29,38 +51,138 @@ li {
     overflow-wrap: nowrap;
 }
 
-a:hover {
-    color: #0088a9;
-}
-
+// mobile - style for navigation bar list and button
 li,button {
     font-family: 'Noto Sans Mono', monospace;
     font-weight: 500;
     font-size: 0.8rem;
-    color: aliceblue;
+    color: white;
 }
 
+// mobile - style for button
 button {
     padding: 0.3rem 0.3rem;
-    background-color: rgba(0,136,169,1);
-    /* border: 1px solid red; */
+    background-color: rgb(75, 198, 140);
     border-radius: 5rem;
     cursor: pointer;
     transition: all .3s ease 0s;
 }
 
-button:hover {
-    background-color: rgba(0,136,169,0.6);
-}
-
-a:link, a:visited {
-    color: black;
-}
-
-header {
+// mobile - positioning of contents in nav bar
+.header {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items:center;
-    background-color: cornsilk;
+    @include header_color;
 }
 
+// mobile - positioning of conact button
+.header_contact { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include header_color;
+    margin-right: 2%;
+    width: 100%;
+}
+}
+
+// tablet view (820px)
+@media (min-width:820px) {
+    
+    // tablet - logo img style
+    #logo {
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        width: 3.1rem;
+        height: 3.1rem;
+        margin-left: 2%;
+    }
+    
+    // tablet - style for navigation bar list and button
+    li,button {
+        font-family: 'Noto Sans Mono', monospace;
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: white;
+    }
+    
+    // tablet - style for button
+    button {
+        padding: 0.3rem 0.3rem;
+        background-color: rgb(75, 198, 140);
+        border-radius: 5rem;
+        cursor: pointer;
+        transition: all .3s ease 0s;
+        margin-left: 16%;
+    }
+
+    // tablet - positioning of contents in nav bar
+    .header {
+        display: flex;
+        align-items:center;
+        @include header_color;
+    }
+
+    // tablet - positioning of conact button
+    .header_contact { 
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @include header_color;
+        margin-right: 2%;
+        width: 100%;
+    }
+}
+
+// desktop view (992px)
+@media (min-width:992px) {
+    
+    // desktop - logo img style
+    #logo {
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        width: 5rem;
+        height: 5rem;
+        margin-left: 2%;
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%)
+    }
+    
+// desktop - style for navigation bar list and button
+    li,button {
+        font-family: 'Noto Sans Mono', monospace;
+        font-weight: 500;
+        font-size: 1.8rem;
+        color: aliceblue;
+    }
+    
+    // desktop - style for button
+    button {
+        padding: 0.3rem 0.3rem;
+        background-color: rgb(75, 198, 140);
+        border-radius: 5rem;
+        cursor: pointer;
+        transition: all .3s ease 0s;
+        margin-left: 12%;
+    }
+
+    // desktop - positioning of contents in nav bar
+    .header {
+        display: flex;
+        align-items:center;
+        @include header_color;
+    }
+
+    // desktop - positioning of conact button
+    .header_contact { 
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @include header_color;
+        margin-right: 2%;
+        width: 100%;
+    }
+}

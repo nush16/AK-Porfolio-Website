@@ -1,0 +1,323 @@
+ // SCSS for contact me page
+
+  // placeholder text style 'contact message'
+ #contact_message::placeholder{
+   font-family: 'Noto Sans Mono', monospace;
+}
+
+// placeholder text style 'contact name'
+.contact_name::placeholder{
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+// placeholder text style 'contact email'
+.contact_email::placeholder{
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+// tablet - placeholder style text 'subject'
+.contact_subject::placeholder{
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+// send button effect
+button.send:hover {
+    background-color: green;
+    color: white;
+    transition: all .3s ease 0s
+}
+
+// mobile view (320px)
+@media (min-width:320px) {
+
+    // mobile - description of page (text under heading)
+    .sub_text {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+// mobile - styles for the form 
+    .fill_in_details {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10%;
+        background-color: rgb(216, 239, 231);
+        box-shadow: 0 0 10px green;
+        border-radius: 20px;
+        overflow: hidden;
+        width: 80%;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 0.8rem;
+        letter-spacing: 0.5rem;
+        border: 0;
+        padding: 1.2rem;
+
+        // mobile - div container for deatils to be filled
+    .contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 0.5rem;
+        }
+
+        // mobile - dimensions for contact name text
+ .contact_name {
+        width: 10rem;
+        height: 1.3rem;
+        font-size: 1rem;
+        }
+    
+         // mobile - dimensions for contact email text
+ .contact_email {
+        width: 10rem;
+        height: 1.3rem;
+        font-size: 1rem;
+         }   
+
+          // mobile - dimensions for subject text
+.contact_subject {
+        margin-top: 0.2rem;
+        width: 16rem;
+        }
+
+         // mobile - dimensions for contact message text
+#contact_message {
+        margin-top: 0.2rem;
+        width: 16rem;
+        height: 10rem;
+        }
+
+        // mobile - send button style
+.send {
+        background: rgb(75, 198, 140); 
+        color: white;
+        margin-top: 1rem;
+        }
+        }
+}
+
+// tablet view (820px)
+@media (min-width:820px) {
+    
+     // tablet - description of page (text under heading)
+    .sub_text {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1.5rem;
+    }
+    
+    // tablet - styles for the form 
+    .fill_in_details {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10%;
+        background-color: rgb(216, 239, 231);
+        box-shadow: 0 0 10px green;
+        border-radius: 20px;
+        overflow: hidden;
+        width: 50%;
+        margin-left: 25%;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 1rem;
+        letter-spacing: 0.5rem;
+        border: 0;
+        padding: 1.2rem;
+        font-family: 'Noto Sans Mono', monospace;
+        color: black;
+    
+    // tablet - div container for deatils to be filled
+    .contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 0.5rem;
+        font-size: 1rem;
+        }
+    
+        // tablet - dimensions for contact name text
+        .contact_name {
+            width: 10rem;
+            height: 1.3rem;
+            font-size: 1rem;
+            }
+        
+            // tablet - dimensions for contact email text
+        .contact_email {
+            width: 10rem;
+            height: 1.3rem;
+            font-size: 1rem;
+        }
+    
+        // tablet - dimensions for subject text
+        .contact_subject {
+            margin-top: 0.2rem;
+            width: 19rem;
+            height: 1.3rem;
+            font-size: 1rem;
+            }
+        
+            // tablet - dimensions for contact message text
+        #contact_message {
+            margin-top: 0.2rem;
+            width: 19rem;
+            height: 12.3rem;
+            font-size: 1rem;
+            }
+        
+            // tablet - send button style
+        .send {
+            background: rgb(75, 198, 140); 
+            color: white;
+            margin-top: 1rem;
+            margin-right: 10%;
+            }
+            }
+
+            // tablet - placeholder text 'contact message'
+        #contact_message::placeholder{
+            font-family: 'Noto Sans Mono', monospace;
+            font-size: 1rem;
+         }
+         
+         // tablet - placeholder text 'contact name'
+         .contact_name::placeholder{
+             font-family: 'Noto Sans Mono', monospace;
+             font-size: 1rem;
+         }
+         
+         // tablet - placeholder text 'contact email'
+         .contact_email::placeholder{
+             font-family: 'Noto Sans Mono', monospace;
+             font-size: 1rem;
+         }
+         
+         // tablet - placeholder text 'subject'
+         .contact_subject::placeholder{
+             font-family: 'Noto Sans Mono', monospace;
+             font-size: 1rem;
+         }
+    }
+
+// desktop view (992px)
+@media (min-width:992px) { 
+   
+   // desktop - description of page (text under heading)
+    .sub_text {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1.5rem;
+    }
+    
+    // desktop - styles for the form 
+    .fill_in_details {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10%;
+        background-color: rgb(216, 239, 231);
+        box-shadow: 0 0 10px  hsl(158deg 100% 46%);
+        border-radius: 20px;
+        overflow: hidden;
+        width: 42%;
+        margin-left: 29%;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 1.3rem;
+        letter-spacing: 0.5rem;
+        border: 0;
+        padding: 1.2rem;
+        font-family: 'Noto Sans Mono', monospace;
+        color: black;
+    
+         // desktop - div container for deatils to be filled
+    .contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 0.5rem;
+        font-size: 1rem;
+        }
+    
+        // desktop - dimensions for contact name text
+    .contact_name {
+        width: 20rem;
+        height: 2.3rem;
+        font-size: 1.3rem;
+        }
+    
+        // desktop - dimensions for contact email text
+    .contact_email {
+        width: 20rem;
+        height: 2.3rem;
+        font-size: 1.3rem;
+    }
+
+    // desktop - dimensions for subject text
+    .contact_subject {
+        margin-top: 0.2rem;
+        width: 32rem;
+        height: 2.3rem;
+        font-size: 1.3rem;
+        }
+    
+         // desktop - dimensions for contact message text
+    #contact_message {
+        margin-top: 0.2rem;
+        width: 32rem;
+        height: 15.3rem;
+        font-size: 1.3rem;
+        }
+    
+        // desktop - send button style
+    .send {
+        background: rgb(75, 198, 140); 
+        color: white;
+        margin-top: 1rem;
+        margin-right: 10%;
+        }
+        }
+
+         // desktop - placeholder text 'contact message'
+        #contact_message::placeholder{
+            font-family: 'Noto Sans Mono', monospace;
+            font-size: 1.3rem;
+         }
+         
+         // desktop - placeholder text 'contact name'
+         .contact_name::placeholder{
+             font-family: 'Noto Sans Mono', monospace;
+             font-size: 1.3rem;
+         }
+         
+         // desktop - placeholder text 'contact email'
+         .contact_email::placeholder{
+             font-family: 'Noto Sans Mono', monospace;
+             font-size: 1.3rem;
+         }
+         
+         // desktop - placeholder text 'subject'
+         .contact_subject::placeholder{
+             font-family: 'Noto Sans Mono', monospace;
+             font-size: 1.3rem;
+         }
+
+}
+
+
+
+
+

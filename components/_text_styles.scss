@@ -1,0 +1,350 @@
+ // SCSS for text styles
+
+@media (min-width:320px) {
+
+        // mobile - text style for main heading container on homepage
+        .home_titles{
+                font-family: 'Noto Sans Mono', monospace;
+                margin-top: 1rem;
+                margin-bottom: 3rem;
+                margin-left: 2rem;
+
+        // mobile - text style for main heading on homepage
+        .home_1 {
+                color: white;
+                font-size: 2rem;
+                margin-bottom: -0.7rem;
+        }
+        
+        // mobile - text style for main heading on homepage
+        .home_name {
+                color: white;
+                font-size: 5rem;
+                color: transparent;
+                -webkit-text-stroke: 1px white;
+                background: url(/images/Untitled\ 10.gif);
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-position: 0 0;
+                animation: move 20s linear infinite;
+        }
+        
+        // mobile - animation for main heading on homepage
+        @keyframes move{
+                100% {
+                        background-position: 800px 0;
+                }
+        }
+
+        // mobile - text style for main statement on homepage
+        .home_sub {
+                color: white;
+                font-size: 2rem;
+        }
+        }
+
+        // mobile - text style for main heading on other pages
+        .title {
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           margin-left: 1rem;
+           padding-bottom: 1rem;
+           margin-top: 1rem;
+           font-family: 'Noto Sans Mono', monospace;
+           font-weight: 500;
+           font-size: 1.8rem;
+           color: white;
+           width: 90%;
+           margin-right: 2.5%;
+       }
+
+        // mobile - text style for subheading  (i like to build and design) on homepage
+        .title_sub1 {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 1rem;
+                margin-left: 1rem;
+                padding-bottom: 1rem;
+                font-family: 'Noto Sans Mono', monospace;
+                font-weight: 500;
+                font-size: 1.2rem;
+                color: white;
+                width: 90%;
+                margin-right: 2.5%;
+        }
+   
+        // mobile - text style for subheading  (i write interesting things) on homepage
+        .title_sub2 {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 1rem;
+                margin-left: 1rem;
+                padding-bottom: 1rem;
+                font-family: 'Noto Sans Mono', monospace;
+                font-weight: 500;
+                font-size: 1.2rem;
+                color: white;
+                width: 90%;
+                margin-right: 2.5%;
+        }
+
+        // mobile - text style for p class selector 
+        p {
+                font-family: 'Noto Sans Mono', monospace;
+                margin-left: 1rem;
+                font-weight: 100;
+                font-size: 0.7rem;
+                color: white;
+                align-items: center;
+                overflow-wrap: wrap;
+        }
+
+        // mobile - text style for blog and project 
+                .posts_subheading {
+                display: flex;
+                justify-content: center;
+                padding-left: 0.5rem;
+                font-size: 1rem;
+                padding-bottom: 0.8rem;
+                font-family: 'Noto Sans Mono', monospace;
+                font-weight: 500;
+        }
+
+        // mobile - text style for date for blog and projects 
+                .posts_text {
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 1rem;
+                font-family: 'Noto Sans Mono', monospace;
+                font-weight: 500;
+                padding-bottom: 0.5rem;
+        }
+        }
+
+// tablet view (820px)
+@media (min-width:820px) {
+        
+        // tablet - text style for main heading on other pages 
+        .title {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-left: 1rem;
+                padding-bottom: 1rem;
+                margin-top: 1rem;
+                font-family: 'Noto Sans Mono', monospace;
+                font-weight: 500;
+                font-size: rem;
+                color: white;
+                width: 90%;
+                margin-right: 5%;
+                margin-left: 5%;
+            }
+
+        // tablet - text style for subheading  (i like to build and design) on homepage
+        .title_sub1 {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 1rem;
+                margin-left: 1rem;
+                padding-bottom: 1rem;
+                font-family: 'Noto Sans Mono', monospace;
+                font-weight: 500;
+                font-size: 1.6rem;
+                color: white;
+                width: 90%;
+                margin-right: 5%;
+                margin-left: 5%;
+        }
+
+        // tablet - text style for subheading  (i write interesting things) on homepage
+        .title_sub2 {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 1rem;
+                margin-left: 1rem;
+                padding-bottom: 1rem;
+                font-family: 'Noto Sans Mono', monospace;
+                font-weight: 500;
+                font-size: 1.6rem;
+                color: white;
+                width: 90%;
+                margin-right: 5%;
+                margin-left: 5%;
+        }
+
+       // tablet - text style for p class selector  
+        p {
+                font-family: 'Noto Sans Mono', monospace;
+                margin-left: 1rem;
+                font-weight: 100;
+                font-size: 1rem;
+                color: white;
+                align-items: center;
+                overflow-wrap: wrap;
+                text-align: center;
+        }
+
+        // tablet - text style for blog and project 
+        .posts_subheading {
+             display: flex;
+             justify-content: center;
+             padding-left: 0.5rem;
+             font-size: 1.5rem;
+             padding-bottom: 1.5rem;
+             font-family: 'Noto Sans Mono', monospace;
+             font-weight: 500;
+             text-align: center;
+     }
+     
+     // tablet - text style for date for blog and projects 
+     .posts_text {
+             display: flex;
+             justify-content: flex-end;
+             padding-right: 1rem;
+             font-family: 'Noto Sans Mono', monospace;
+             font-weight: 500;
+             padding-bottom: 0.5rem;
+     }
+     }
+
+// desktop view (992px)
+@media (min-width:992px) {
+
+        // desktop - text style for main heading container on homepage
+        .home_titles{
+                font-family: 'Noto Sans Mono', monospace;
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+                margin-left: 2rem;
+
+        // desktop - text style for main heading on homepage
+        .home_1 {
+                color: white;
+                font-size: 4rem;
+                margin-bottom: -1.5rem;
+        }
+        
+        // desktop - text style for main heading on homepage
+        .home_name {
+                color: white;
+                font-size: 10rem;
+                color: transparent;
+                -webkit-text-stroke: 1px white;
+                background: url(/images/Untitled\ 10.gif);
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-position: 0 0;
+                animation: move 20s linear infinite;
+        }
+        
+        // desktop - animation for main heading on homepage
+        @keyframes move{
+                100% {
+                        background-position: 800px 0;
+                }
+        }
+
+         // desktop - text style for main statement on homepage
+        .home_sub {
+                color: white;
+                font-size: 3rem;
+        }
+        }
+        // desktop - text style for main heading on other pages
+        .title {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-left: 1rem;
+                padding-bottom: 1rem;
+                margin-top: 1rem;
+                font-family: 'Noto Sans Mono', monospace;
+                font-weight: 900;
+                font-size: 5rem;
+                color: white;
+                width: 90%;
+                margin-right: 5%;
+                margin-left: 5%;
+                color: transparent;
+                -webkit-text-stroke: 1px white;
+                background: url(/images/Untitled\ 10.gif);
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-position: 0 0;
+                animation: move 20s linear infinite;
+            }
+
+
+            // desktop - text style for subheading  (i like to build and design) on homepage
+         .title_sub1 {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 1rem;
+                margin-left: 1rem;
+                padding-bottom: 1rem;
+                font-family: 'Noto Sans Mono', monospace;
+                font-weight: 500;
+                font-size: 2.3rem;
+                color: white;
+                width: 90%;
+                margin-left: -9%;
+        }
+
+        // desktop - text style for subheading  (i write interesting things) on homepage
+      .title_sub2 {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 1rem;
+                margin-left: 1rem;
+                padding-bottom: 2rem;
+                font-family: 'Noto Sans Mono', monospace;
+                font-weight: 500;
+                font-size: 2.3rem;
+                color: white;
+                width: 90%;
+                margin-left: 25%;
+        }
+
+        // desktop - text style for p class selector 
+     p {
+                font-family: 'Noto Sans Mono', monospace;
+                margin-left: 1rem;
+                font-weight: 100;
+                font-size: 1.5rem;
+                color: white;
+                align-items: center;
+                overflow-wrap: wrap;
+                text-align: center;
+        }
+     
+        // desktop - text style for blog and project 
+     .posts_subheading {
+             display: flex;
+             justify-content: center;
+             padding-left: 0.5rem;
+             font-size: 1.7rem;
+             padding-bottom: 1.5rem;
+             font-family: 'Noto Sans Mono', monospace;
+             font-weight: 500;
+             text-align: center;
+     }
+     
+     // desktop - text style for date for blog and projects 
+     .posts_text {
+             display: flex;
+             justify-content: flex-end;
+             padding-right: 1rem;
+             font-family: 'Noto Sans Mono', monospace;
+             font-weight: 500;
+             padding-bottom: 0.5rem;
+     }
+     }
+

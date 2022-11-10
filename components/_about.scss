@@ -1,0 +1,596 @@
+ // SCSS for about me page
+
+// mobile view (320px)
+@media (min-width:320px) {
+  
+    .about{
+      width: 90%;
+      margin-right: 2.5%;
+  
+    //   mobile - image slideshow 
+      .slideshow {
+          width: 20rem;
+          height: 20rem;
+          margin-top: 10%;
+          margin-left: 2rem;
+      }
+  
+    //   mobile - container for static and dynamic animation
+      .txt_animation {
+        width: 35rem;
+        margin-left: 1rem;
+        margin-top: 5rem;
+    }
+
+    // mobile - styles for static text 'im'
+    .txt_animation .static_txt {
+        color: white;
+        font-size: 1.7rem;
+        font-family: 'Noto Sans Mono', monospace;
+        margin-bottom: -2.9rem;
+    }
+
+     // mobile - styles for moving (dynamic) text
+    .txt_animation .dynamic_txt{
+    margin-left: 6rem;
+    line-height: 4rem;
+    height: 3.3rem;
+    overflow: hidden;
+    }
+
+    .dynamic_txt li {
+        position: relative;
+    }
+
+    // mobile - styles for moving (dynamic) text
+    .dynamic_txt li {
+        color: green;
+        font-size: 1.5rem;
+        font-family: 'Noto Sans Mono', monospace;
+        position: relative;
+        display: block;
+        top: 0;
+        animation: slide 9s steps(3) infinite;
+    }
+
+    // mobile - to slide up and down
+    @keyframes slide {
+    100% {
+    top: -12rem;
+    }
+    }
+
+    // mobile - typing animation and covering words
+    .dynamic_txt li::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(38, 54, 45, 1);
+        border-left: 3px solid green;
+        left: 0;
+        animation: typing 3s steps(7) infinite;
+    }
+
+    // mobile - typing animation
+    @keyframes typing {
+        40%,60%
+        {
+            left: 51rem;
+        }
+        100% 
+        {
+            left: 0;
+        }
+    }
+}
+
+// mobile - para 'about me'
+.pabout {
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 100;
+    color: white;
+    background-color: rgba(38, 54, 45, 1);
+    border-radius: 20px;
+    padding: 1rem;
+    height: 17rem;
+    width: 20rem;
+    margin-left: 1.9rem;
+    margin-top: 15%;
+}
+
+// mobile - rainbow border for para 'about me'
+.pabout::before {
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    height: 18rem;
+    width: 21rem;
+    margin-top: -1.5rem;
+    margin-left: -1.5rem;
+    background-image: linear-gradient(
+        45deg,
+        hsl(240deg 100% 20%) 0%,
+        hsl(322deg 100% 31%) 9%,
+        hsl(355deg 89% 58%) 18%,
+        hsl(39deg 100% 50%) 27%,
+        hsl(58deg 100% 48%) 36%,
+        hsl(66deg 100% 48%) 45%,
+        hsl(76deg 100% 49%) 55%,
+        hsl(87deg 100% 50%) 64%,
+        hsl(132deg 93% 58%) 73%,
+        hsl(158deg 100% 46%) 82%,
+        hsl(171deg 100% 42%) 91%,
+        hsl(180deg 73% 44%) 100%
+        );
+    z-index: -1;
+}
+
+// mobile - para 'resume'
+.resume_text {
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    height: 7rem;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+
+// mobile - resume link/img to click on
+.resume_pic {
+   display: flex;
+   justify-content: center;
+   width: 5.5rem;
+   height: 5rem;
+   border-radius: 50%;
+   position: relative;
+   margin-top: -6.3rem;
+   margin-left: 11rem;
+}
+
+// mobile - container for resume text and img
+.resume {   
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 100;
+    color: white;
+    background-color: rgba(38, 54, 45, 1);
+    border-radius: 20px;
+    height: 7rem;
+    width: 17rem;
+    margin-left: 3rem;
+}
+
+// mobile - rainbow border for resume text and img
+.resume::before {
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    height: 8rem;
+    width: 18rem;
+    margin-top: -0.5rem;
+    margin-left: -0.5rem;
+    background-image: linear-gradient(
+        45deg,
+        hsl(240deg 100% 20%) 0%,
+        hsl(322deg 100% 31%) 9%,
+        hsl(355deg 89% 58%) 18%,
+        hsl(39deg 100% 50%) 27%,
+        hsl(58deg 100% 48%) 36%,
+        hsl(66deg 100% 48%) 45%,
+        hsl(76deg 100% 49%) 55%,
+        hsl(87deg 100% 50%) 64%,
+        hsl(132deg 93% 58%) 73%,
+        hsl(158deg 100% 46%) 82%,
+        hsl(171deg 100% 42%) 91%,
+        hsl(180deg 73% 44%) 100%
+        );
+    z-index: -1;
+}
+}
+  
+  // tablet view (820px)
+  @media (min-width:820px) {
+    
+    .about{
+        width: 90%;
+        margin-right: 2.5%;
+    
+         //   tablet - image slideshow 
+        .slideshow {
+            width: 40rem;
+            height: 40rem;
+            margin-top: 10%;
+            margin-left: 8rem;
+        }
+    
+        //   tablet - container for static and dynamic animation
+        .txt_animation {
+          width: 50rem;
+          margin-left: 9rem;
+          margin-top: 5rem;
+      }
+  
+      // tablet - styles for static text 'im'
+      .txt_animation.static_txt {
+          color: white;
+          font-size: 3rem;
+          font-family: 'Noto Sans Mono', monospace;
+          margin-bottom: -3.6rem;
+      }
+  
+      // tablet - styles for moving (dynamic) text
+      .txt_animation .dynamic_txt{
+      margin-left: 11rem;
+      line-height: 4rem;
+      height: 3.3rem;
+      overflow: hidden;
+      }
+  
+      .dynamic_txt li {
+          position: relative;
+      }
+  
+      // tablet - styles for moving (dynamic) text
+      .dynamic_txt li {
+          color: green;
+          font-size: 2.6rem;
+          font-family: 'Noto Sans Mono', monospace;
+          position: relative;
+          display: block;
+          top: 0;
+          animation: slide 9s steps(3) infinite;
+      }
+  
+       // tablet - to slide up and down
+      @keyframes slide {
+      100% {
+      top: -12rem;
+      }
+      }
+  
+      // tablet - typing animation and covering words
+      .dynamic_txt li::after {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(38, 54, 45, 1);
+          border-left: 3px solid green;
+          left: 0;
+          animation: typing 3s steps(7) infinite;
+      }
+  
+      // tablet - typing animation
+      @keyframes typing {
+          40%,60%
+          {
+              left: 51rem;
+          }
+          100% 
+          {
+              left: 0;
+          }
+      }
+  }
+  
+  // tablet - para 'about me'
+  .pabout {
+      font-family: 'Noto Sans Mono', monospace;
+      font-weight: 100;
+      color: white;
+      background-color: rgba(38, 54, 45, 1);
+      border-radius: 20px;
+      padding: 1rem;
+      height: 22rem;
+      width: 30rem;
+      margin-left: 11rem;
+      margin-top: 15%;
+  }
+  
+  // tablet  - rainbow border for para 'about me'
+  .pabout::before {
+      content: '';
+      position: absolute;
+      border-radius: 20px;
+      height: 23rem;
+      width: 31rem;
+      margin-top: -1.5rem;
+      margin-left: -3rem;
+      background-image: linear-gradient(
+          45deg,
+          hsl(240deg 100% 20%) 0%,
+          hsl(322deg 100% 31%) 9%,
+          hsl(355deg 89% 58%) 18%,
+          hsl(39deg 100% 50%) 27%,
+          hsl(58deg 100% 48%) 36%,
+          hsl(66deg 100% 48%) 45%,
+          hsl(76deg 100% 49%) 55%,
+          hsl(87deg 100% 50%) 64%,
+          hsl(132deg 93% 58%) 73%,
+          hsl(158deg 100% 46%) 82%,
+          hsl(171deg 100% 42%) 91%,
+          hsl(180deg 73% 44%) 100%
+          );
+      z-index: -1;
+  }
+  
+  // tablet - para 'resume'
+  .resume_text {
+      display: flex;
+      justify-content: center;
+      width: 11rem;
+      height: 10rem;
+      border-radius: 50%;
+      position: relative;
+      margin-top: 4rem;
+      margin-left: 2rem;
+  }
+  
+  // tablet - resume link/img to click on
+  .resume_pic {
+     display: flex;
+     justify-content: center;
+     width: 5.5rem;
+     height: 5rem;
+     border-radius: 50%;
+     position: relative;
+     margin-top: -8rem;
+     margin-left: 15rem;
+  }
+  
+  // tablet - container for resume text and img
+  .resume {   
+      font-family: 'Noto Sans Mono', monospace;
+      font-weight: 100;
+      color: white;
+      background-color: rgba(38, 54, 45, 1);
+      box-shadow: 0 0 10px rgb(204, 193, 163,0.8);
+      border-radius: 20px;
+      height: 11rem;
+      width: 22rem;
+      margin-left: 15rem;
+  }
+  
+  // tablet - rainbow border for resume text and img
+  .resume::before {
+      content: '';
+      position: absolute;
+      border-radius: 20px;
+      height: 12rem;
+      width: 23rem;
+      margin-top: -0.5rem;
+      margin-left: -0.5rem;
+      background-image: linear-gradient(
+          45deg,
+          hsl(240deg 100% 20%) 0%,
+          hsl(322deg 100% 31%) 9%,
+          hsl(355deg 89% 58%) 18%,
+          hsl(39deg 100% 50%) 27%,
+          hsl(58deg 100% 48%) 36%,
+          hsl(66deg 100% 48%) 45%,
+          hsl(76deg 100% 49%) 55%,
+          hsl(87deg 100% 50%) 64%,
+          hsl(132deg 93% 58%) 73%,
+          hsl(158deg 100% 46%) 82%,
+          hsl(171deg 100% 42%) 91%,
+          hsl(180deg 73% 44%) 100%
+          );
+      z-index: -1;
+  }
+  }
+    
+  // desktop view (992px)
+@media (min-width:992px) {
+    
+    .about{
+        width: 90%;
+        margin-right: 2.5%;
+        margin-top: 7rem;
+    
+        // desktop - grid to position gif and animation 
+        .about_slideshow {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 50% 50%;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        //   desktop - image slideshow 
+            .slideshow {
+                width: 30.5rem;
+                height: 30rem;
+                margin-top: -10%;
+                margin-left: 1rem;
+            }
+
+              //   desktop - container for static and dynamic animation
+            .txt_animation {
+                width: 53rem;
+                margin-left: -3rem;
+                margin-top: 7rem;
+            }
+        
+            // desktop - styles for static text 'im'
+            .txt_animation .static_txt {
+                color: white;
+                font-size: 3.5rem;
+                font-family: 'Noto Sans Mono', monospace;
+                margin-bottom: -3.8rem;
+            }
+        
+            // desktop - styles for moving (dynamic) text
+            .txt_animation .dynamic_txt{
+            margin-left: 13rem;
+            line-height: 4rem;
+            height: 3.3rem;
+            overflow: hidden;
+            }
+        
+            .dynamic_txt li {
+                position: relative;
+            }
+        
+            // desktop - styles for moving (dynamic) text
+            .dynamic_txt li {
+                color: green;
+                font-size: 3.5rem;
+                font-family: 'Noto Sans Mono', monospace;
+                position: relative;
+                display: block;
+                top: 0;
+                animation: slide 9s steps(3) infinite;
+            }
+        
+            // desktop - to slide up and down
+            @keyframes slide {
+            100% {
+            top: -12rem;
+            }
+            }
+        
+            // desktop - typing animation and covering words
+            .dynamic_txt li::after {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(38, 54, 45, 1);
+                border-left: 3px solid green;
+                left: 0;
+                animation: typing 3s steps(7) infinite;
+            }
+        
+             // desktop - typing animation
+            @keyframes typing {
+                40%,60%
+                {
+                    left: 51rem;
+                }
+                100% 
+                {
+                    left: 0;
+                }
+            }
+    }
+
+    // desktop - grid to position 'resume' and 'about me' 
+    .about_resume {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 60% 40%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        // desktop - para 'about me'
+        .pabout {
+            font-family: 'Noto Sans Mono', monospace;
+            font-weight: 100;
+            color: white;
+            background-color: rgba(38, 54, 45, 1);
+            border-radius: 20px;
+            padding: 1rem;
+            height: 32rem;
+            width: 43rem;
+            margin-left: -0.5rem;
+            margin-top: 10%;
+        }
+
+        // desktop - rainbow border for para 'about me'
+        .pabout::before {
+            content: '';
+            position: absolute;
+            border-radius: 20px;
+            height: 33rem;
+            width: 44rem;
+            margin-top: -1.5rem;
+            margin-left: -3rem;
+            background-image: linear-gradient(
+                45deg,
+                hsl(240deg 100% 20%) 0%,
+                hsl(322deg 100% 31%) 9%,
+                hsl(355deg 89% 58%) 18%,
+                hsl(39deg 100% 50%) 27%,
+                hsl(58deg 100% 48%) 36%,
+                hsl(66deg 100% 48%) 45%,
+                hsl(76deg 100% 49%) 55%,
+                hsl(87deg 100% 50%) 64%,
+                hsl(132deg 93% 58%) 73%,
+                hsl(158deg 100% 46%) 82%,
+                hsl(171deg 100% 42%) 91%,
+                hsl(180deg 73% 44%) 100%
+                );
+            z-index: -1;
+        }
+
+        // desktop - para 'resume'
+        .resume_text {
+            display: flex;
+            justify-content: center;
+            width: 15.3rem;
+            height: 7rem;
+            border-radius: 50%;
+            position: relative;
+            margin-top: 8rem;
+            margin-left: 5rem;
+        }
+  
+        // desktop - resume link/img to click on
+        .resume_pic {
+           display: flex;
+           justify-content: center;
+           width: 9rem;
+           height: 9rem;
+           border-radius: 50%;
+           position: relative;
+           margin-top: -9rem;
+           margin-left: 21rem;
+        }
+
+        // desktop - container for resume text and img
+        .resume {   
+            font-family: 'Noto Sans Mono', monospace;
+            font-weight: 100;
+            color: white;
+            background-color: rgba(38, 54, 45, 1);
+            box-shadow: 0 0 10px rgb(204, 193, 163,0.8);
+            border-radius: 20px;
+            height: 22rem;
+            width: 32rem;
+            margin-top: 5rem;
+            margin-left: -2rem;
+        }
+
+        // desktop - rainbow border for resume text and img
+        .resume::before {
+            content: '';
+            position: absolute;
+            border-radius: 20px;
+            height: 20rem;
+            width: 30rem;
+            margin-top: 3rem;
+            margin-left: 3rem;
+            background-image: linear-gradient(
+                45deg,
+                hsl(240deg 100% 20%) 0%,
+                hsl(322deg 100% 31%) 9%,
+                hsl(355deg 89% 58%) 18%,
+                hsl(39deg 100% 50%) 27%,
+                hsl(58deg 100% 48%) 36%,
+                hsl(66deg 100% 48%) 45%,
+                hsl(76deg 100% 49%) 55%,
+                hsl(87deg 100% 50%) 64%,
+                hsl(132deg 93% 58%) 73%,
+                hsl(158deg 100% 46%) 82%,
+                hsl(171deg 100% 42%) 91%,
+                hsl(180deg 73% 44%) 100%
+                );
+            z-index: -1;
+        }
+    }
+}
+  

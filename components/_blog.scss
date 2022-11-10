@@ -1,0 +1,486 @@
+ // SCSS for blog page
+
+@mixin blog_shape {
+        background-color: rgba(38, 54, 45, 0.5);
+        border-radius: 20px;
+    }
+
+// mobile view (320px)
+@media (min-width:320px) {
+
+@mixin blogpages_shape {
+        background-color: rgba(38, 54, 45, 0.5);
+        border-radius: 20px;
+        width: 80%;
+        padding: 1rem;
+        margin-top: 1rem;
+    
+    }
+    
+@mixin blog_frame {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 35% 65%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+.blog_posts {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+.blog1 {
+    @include blog_shape;
+    box-shadow: 0 0 30px hsl(322deg 100% 31%);
+    
+    img {
+        width: 7.1rem;
+        height: 7.1rem;
+        margin-left: 16%;
+    }
+    }
+
+.blog2 {
+    @include blog_shape;
+    box-shadow: 0 0 30px  hsl(39deg 100% 50%);
+    img {
+        width: 6.0rem;
+        height: 6.0rem;
+        margin-left: 22%;
+        }
+        }
+
+.blog3 {
+    @include blog_shape;
+    box-shadow: 0 0 30px  hsl(66deg 100% 48%);
+    img {
+        width: 8.7rem;
+        height: 8.7rem;
+        margin-left: 1rem;
+        margin-top: -0.8rem;
+        }
+        }
+
+.blog4 {
+    @include blog_shape;
+    box-shadow: 0 0 30px  hsl(158deg 100% 46%);
+        img {
+        width: 6.8rem;
+        height: 6.8rem;
+        margin-left: 1.5rem;
+        padding-top: 0.5rem;
+         }
+        }
+
+.blog5 {
+    @include blog_shape;
+    box-shadow: 0 0 30px  hsl(180deg 73% 44%);
+        img {
+        width: 6.1rem;
+        height: 6.1rem;
+        margin-left: 2.1rem;
+        padding-top: 0.5rem;
+        }
+        }
+    }
+
+.blog1_layout {
+    @include blog_frame;
+    .blog1_img {
+        width: 9rem;
+        height: 9rem;
+        margin-top: 2rem;
+        margin-right: 1%;
+        }
+    .about_blog1 {
+        @include blogpages_shape; 
+        box-shadow: 0 0 30px hsl(322deg 100% 31%);
+        }
+}
+
+.blog2_layout {
+    @include blog_frame;
+    .blog2_img {
+        width: 9rem;
+        height: 9rem;
+        margin-top: 2rem;
+        margin-right: 1%;
+        }
+    .about_blog2 {
+        @include blogpages_shape; 
+        box-shadow: 0 0 30px  hsl(39deg 100% 50%);
+        }
+}
+
+.blog3_layout {
+    @include blog_frame;
+    .blog3_img {
+        width: 9rem;
+        height: 9rem;
+        margin-top: 2rem;
+        margin-right: 1%;
+        }
+    .about_blog3 {
+        @include blogpages_shape;
+        box-shadow: 0 0 30px  hsl(66deg 100% 48%);  
+        }
+}
+
+.blog4_layout {
+    @include blog_frame;
+    .blog4_img {
+        width: 9rem;
+        height: 9rem;
+        margin-top: 2rem;
+        margin-right: 1%;
+        }
+    .about_blog4 {
+        @include blogpages_shape; 
+        box-shadow: 0 0 30px  hsl(158deg 100% 46%);
+        }
+}
+
+.blog5_layout {
+    @include blog_frame;
+    .blog5_img {
+        width: 9rem;
+        height: 9rem;
+        margin-top: 2rem;
+        margin-right: 1%;
+        }
+    .about_blog5 {
+        @include blogpages_shape; 
+        box-shadow: 0 0 30px  hsl(180deg 73% 44%);
+        }
+}
+}
+
+// tablet view (820px)
+@media (min-width:820px) {
+
+@mixin blogpages_shape {
+        background-color: rgba(38, 54, 45, 0.5);
+        border-radius: 20px;
+        width: 80%;
+        padding: 1rem;
+        margin-top: 1rem;
+    
+    }
+    
+@mixin blog_frame {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 40% 60%;
+        width: 80%;
+        margin-left: 15%;
+    }
+
+    .blog_posts {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    
+    .blog1 {
+        @include blog_shape;
+        box-shadow: 0 0 30px hsl(322deg 100% 31%);
+        img {
+            width: 10rem;
+            height: 10rem;
+            margin-left: 30%;
+        }
+        }
+    
+    .blog2 {
+        @include blog_shape;
+        box-shadow: 0 0 30px  hsl(39deg 100% 50%);
+        img {
+            width: 10rem;
+            height: 10rem;
+            margin-left: 30%;
+        }
+        }
+    
+    .blog3 {
+        @include blog_shape;
+        box-shadow: 0 0 30px  hsl(66deg 100% 48%);
+        img {
+            width: 10rem;
+            height: 10rem;
+            margin-left: 30%;
+        }
+        }
+    
+    .blog4 {
+        @include blog_shape;
+        box-shadow: 0 0 30px  hsl(158deg 100% 46%);
+        img {
+            width: 10rem;
+            height: 10rem;
+            margin-left: 30%;
+            margin-bottom: -3%;
+        }
+        }
+    
+    .blog5 {
+        @include blog_shape;
+        box-shadow: 0 0 30px  hsl(180deg 73% 44%);
+        img {
+            width: 10rem;
+            height: 10rem;
+            margin-left: 30%;
+            margin-bottom: -3%;
+            }
+            }
+        }
+    
+    .blog1_layout {
+        @include blog_frame;
+        .blog1_img {
+            width: 12rem;
+            height: 12rem;
+            margin-top: 1rem;
+            margin-left: 20%;
+            }
+        .about_blog1 {
+            @include blogpages_shape; 
+            box-shadow: 0 0 30px hsl(322deg 100% 31%);
+            }
+    }
+    
+    .blog2_layout {
+        @include blog_frame;
+        .blog2_img {
+            width: 12rem;
+            height: 12rem;
+            margin-top: 1rem;
+            margin-left: 20%;
+            }
+        .about_blog2 {
+            @include blogpages_shape; 
+            box-shadow: 0 0 30px  hsl(39deg 100% 50%);
+            }
+    }
+    
+    .blog3_layout {
+        @include blog_frame;
+        .blog3_img {
+            width: 12rem;
+            height: 12rem;
+            margin-top: 1rem;
+            margin-left: 20%;
+            }
+        .about_blog3 {
+            @include blogpages_shape;
+            box-shadow: 0 0 30px  hsl(66deg 100% 48%);
+            }
+    }
+    
+    .blog4_layout {
+        @include blog_frame;
+        .blog4_img {
+            width: 12rem;
+            height: 12rem;
+            margin-top: 1rem;
+            margin-left: 20%;
+            }
+        .about_blog4 {
+            @include blogpages_shape; 
+            box-shadow: 0 0 30px  hsl(158deg 100% 46%);
+            }
+    }
+    
+    .blog5_layout {
+        @include blog_frame;
+        .blog5_img {
+            width: 12rem;
+            height: 12rem;
+            margin-top: 1rem;
+            margin-left: 20%;
+            }
+        .about_blog5 {
+            @include blogpages_shape; 
+            box-shadow: 0 0 30px  hsl(180deg 73% 44%);
+            }
+    }
+    }
+
+// desktop view (992px)
+@media (min-width:992px) {
+
+        @mixin blogpages_shape {
+                background-color: rgba(38, 54, 45, 0.5);
+                border-radius: 20px;
+                width: 80%;
+                padding: 1rem;
+                margin-top: 1rem;
+            
+            }
+            
+        @mixin blog_frame {
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: 40% 60%;
+                width: 80%;
+                margin-left: 15%;
+            }
+        
+            .blog_posts {
+                display: grid;
+                gap: 3%;
+                grid-template-columns: 1fr 1fr;
+                width: 85%;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-bottom: 6rem;
+                margin-top: 2rem;
+            
+            
+            .blog1 {
+                @include blog_shape;
+                box-shadow: 0 0 40px hsl(322deg 100% 31%);
+            
+                img {
+                    width: 14rem;
+                    height: 14rem;
+                    margin-left: 35%;
+                }
+                }
+            
+            .blog2 {
+                @include blog_shape;
+                box-shadow: 0 0 40px  hsl(39deg 100% 50%);
+
+                img {
+                    width: 14rem;
+                    height: 14rem;
+                    margin-left: 35%;
+                }
+                }
+            
+            .blog3 {
+                @include blog_shape;
+                box-shadow: 0 0 40px  hsl(66deg 100% 48%);
+
+                img {
+                    width: 14rem;
+                    height: 14rem;
+                    margin-left: 35%;
+                }
+                }
+   
+
+            .blog4 {
+                @include blog_shape;
+                box-shadow: 0 0 40px  hsl(158deg 100% 46%);
+            
+                img {
+                    width: 14rem;
+                    height: 14rem;
+                    margin-left: 35%;
+                    padding-top: 0.5rem;
+                }
+                }
+            
+            .blog5 {
+                @include blog_shape;
+                box-shadow: 0 0 40px  hsl(180deg 73% 44%);
+            
+                img {
+                    width: 14rem;
+                    height: 14rem;
+                    margin-left: 35%;
+                    padding-top: 0.5rem;
+                    }
+                    }
+                }
+            
+            .blog1_layout {
+                @include blog_frame;
+                margin-bottom: 3rem;
+                .blog1_img {
+                    width: 19rem;
+                    height: 19rem;
+                    margin-top: -0.2rem;
+                    margin-left: 20%;
+                    }
+                .about_blog1 {
+                    @include blogpages_shape; 
+                    box-shadow: 0 0 30px hsl(322deg 100% 31%);
+                    }
+            }
+            
+            .blog2_layout {
+                @include blog_frame;
+                margin-bottom: 3rem;
+                .blog2_img {
+                    width: 19rem;
+                    height: 19rem;
+                    margin-top: 1rem;
+                    margin-left: 20%;
+                    }
+                .about_blog2 {
+                    @include blogpages_shape; 
+                    box-shadow: 0 0 30px  hsl(39deg 100% 50%);
+                    }
+            }
+            
+            .blog3_layout {
+                @include blog_frame;
+                margin-bottom: 3rem;
+                .blog3_img {
+                    width: 19rem;
+                    height: 19rem;
+                    margin-top: 1rem;
+                    margin-left: 20%;
+                    }
+                .about_blog3 {
+                    @include blogpages_shape;
+                    box-shadow: 0 0 30px  hsl(66deg 100% 48%);
+                    }
+            }
+            
+            .blog4_layout {
+                @include blog_frame;
+                margin-bottom: 3rem;
+                .blog4_img {
+                    width: 19rem;
+                    height: 19rem;
+                    margin-top: 1rem;
+                    margin-left: 20%;
+                    }
+                .about_blog4 {
+                    @include blogpages_shape; 
+                    box-shadow: 0 0 30px  hsl(158deg 100% 46%);
+                    }
+            }
+            
+            .blog5_layout {
+                @include blog_frame;
+                margin-bottom: 3rem;
+                .blog5_img {
+                    width: 19rem;
+                    height: 19rem;
+                    margin-top: 1rem;
+                    margin-left: 20%;
+                    }
+                .about_blog5 {
+                    @include blogpages_shape; 
+                    box-shadow: 0 0 30px  hsl(180deg 73% 44%);
+                    }
+            }
+
+            .blog_posts a.blog_link:hover{
+                -webkit-filter: brightness(70%);
+                filter: brightness(70%)
+            }
+            
+            }
+

@@ -1,4 +1,7 @@
-# Creating a portfolio website to demonstrate skills to prospective employers
+# **Anushke Portfolio**
+
+## Project Description
+Creating a personal web portfolio to showcase skills in HTML and CSS. 
 
 using 
 -HTML5
