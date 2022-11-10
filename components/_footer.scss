@@ -52,6 +52,7 @@
 // tablet mode (820px)
 @media (min-width:820px) {
     
+    // tablet - footer positioning 
     footer {
         display: inline-block;
         justify-content: center;
@@ -64,6 +65,7 @@
         left: 0;
         bottom: 0%;
 
+         // tablet - footer text style
     .footer_contact {
         font-size: 1.1rem;
         color: white;
@@ -73,6 +75,7 @@
             padding-top: 0.7rem;
         }
     
+        // tablet - footer text style
         .copyright {
             margin-top: 0.7rem;
             color: white;
@@ -82,7 +85,9 @@
 
 // desktop view (992px)
 @media (min-width:992px) {
-        footer {
+        
+    // desktop - footer positioning 
+    footer {
             display: inline-block;
             justify-content: center;
             height: 3%;
@@ -95,6 +100,7 @@
             left: 0;
             bottom: 0%;
     
+        // desktop - footer text style    
         .footer_contact {
             font-size: 1.2rem;
             color: white;
@@ -107,25 +113,32 @@
             .copyright {
                 margin-top: 0.7rem;
             }
+
+            // desktop - sizing for icon
             .linkedin {
                 width: 4rem;
                 height: 4rem;
             }
+
+            // desktop - sizing for icon
             .twitter {
                 width: 4rem;
                 height: 4rem;
-
             }
+
+            // desktop - sizing for icon
             .github {
                 width: 4rem;
                 height: 4rem;
-
             }
+
+            // desktop - sizing for icon
             .facebook {
                 width: 4rem;
                 height: 4rem;
-
             }
+
+            
             .copyright {
                 font-size: 1rem;
                 color: white;
