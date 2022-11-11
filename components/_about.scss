@@ -17,8 +17,8 @@
   
     //   mobile - container for static and dynamic animation
       .txt_animation {
-        width: 35rem;
-        margin-left: 1rem;
+        width: 24rem;
+        margin-left: 0.5rem;
         margin-top: 5rem;
     }
 
@@ -207,7 +207,7 @@
     
         //   tablet - container for static and dynamic animation
         .txt_animation {
-          width: 50rem;
+          width: 38rem;
           margin-left: 9rem;
           margin-top: 5rem;
       }
@@ -217,9 +217,10 @@
           color: white;
           font-size: 4rem;
           font-family: 'Noto Sans Mono', monospace;
-          margin-bottom: -1rem;
+          margin-bottom: -2;
       }
-  
+
+
       // tablet - styles for moving (dynamic) text
       .txt_animation .dynamic_txt{
       margin-left: 6.5rem;

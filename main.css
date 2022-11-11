@@ -1033,8 +1033,8 @@ button.send:hover {
     margin-left: 2rem;
   }
   .about .txt_animation {
-    width: 35rem;
-    margin-left: 1rem;
+    width: 24rem;
+    margin-left: 0.5rem;
     margin-top: 5rem;
   }
   .about .txt_animation .static_txt {
@@ -1176,7 +1176,7 @@ button.send:hover {
     margin-left: 8rem;
   }
   .about .txt_animation {
-    width: 50rem;
+    width: 38rem;
     margin-left: 9rem;
     margin-top: 5rem;
   }
@@ -1184,7 +1184,7 @@ button.send:hover {
     color: white;
     font-size: 4rem;
     font-family: "Noto Sans Mono", monospace;
-    margin-bottom: -3rem;
+    margin-bottom: -2;
   }
   .about .txt_animation .dynamic_txt {
     margin-left: 6.5rem;
@@ -2359,11 +2359,20 @@ button.send:hover {
     padding-bottom: 1rem;
     margin-top: 1rem;
     font-family: "Noto Sans Mono", monospace;
-    font-weight: 500;
-    font-size: 1.8rem;
+    font-weight: 900;
+    font-size: 3rem;
     color: white;
     width: 90%;
-    margin-right: 2.5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(/images/Untitled\ 10.gif);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: 0 0;
+    -webkit-animation: move 20s linear infinite;
+            animation: move 20s linear infinite;
   }
   .title_sub1 {
     display: flex;
@@ -2429,12 +2438,20 @@ button.send:hover {
     padding-bottom: 1rem;
     margin-top: 1rem;
     font-family: "Noto Sans Mono", monospace;
-    font-weight: 500;
-    font-size: rem;
+    font-weight: 900;
+    font-size: 5rem;
     color: white;
     width: 90%;
     margin-right: 5%;
     margin-left: 5%;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(/images/Untitled\ 10.gif);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: 0 0;
+    -webkit-animation: move 20s linear infinite;
+            animation: move 20s linear infinite;
   }
   .title_sub1 {
     display: flex;
@@ -2471,6 +2488,16 @@ button.send:hover {
     margin-left: 1rem;
     font-weight: 100;
     font-size: 1rem;
+    color: white;
+    align-items: center;
+    overflow-wrap: wrap;
+    text-align: center;
+  }
+  .sub_text2 {
+    font-family: "Noto Sans Mono", monospace;
+    margin-left: 1rem;
+    font-weight: 100;
+    font-size: 1.5rem;
     color: white;
     align-items: center;
     overflow-wrap: wrap;
@@ -2542,7 +2569,7 @@ button.send:hover {
     margin-top: 1rem;
     font-family: "Noto Sans Mono", monospace;
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 7rem;
     color: white;
     width: 90%;
     margin-right: 5%;
@@ -2555,6 +2582,16 @@ button.send:hover {
     background-position: 0 0;
     -webkit-animation: move 20s linear infinite;
             animation: move 20s linear infinite;
+  }
+  .sub_text2 {
+    font-family: "Noto Sans Mono", monospace;
+    margin-left: 1rem;
+    font-weight: 100;
+    font-size: 3rem;
+    color: white;
+    align-items: center;
+    overflow-wrap: wrap;
+    text-align: center;
   }
   .title_sub1 {
     display: flex;

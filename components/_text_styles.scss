@@ -45,18 +45,26 @@
 
         // mobile - text style for main heading on other pages
         .title {
-           display: flex;
-           justify-content: space-around;
-           align-items: center;
-           margin-left: 1rem;
-           padding-bottom: 1rem;
-           margin-top: 1rem;
-           font-family: 'Noto Sans Mono', monospace;
-           font-weight: 500;
-           font-size: 1.8rem;
-           color: white;
-           width: 90%;
-           margin-right: 2.5%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-left: 1rem;
+                padding-bottom: 1rem;
+                margin-top: 1rem;
+                font-family: 'Noto Sans Mono', monospace;
+                font-weight: 900;
+                font-size: 3rem;
+                color: white;
+                width: 90%;
+                margin-right: 5%;
+                margin-left: 5%;
+                color: transparent;
+                -webkit-text-stroke: 1px white;
+                background: url(/images/Untitled\ 10.gif);
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-position: 0 0;
+                animation: move 20s linear infinite;
        }
 
         // mobile - text style for subheading  (i like to build and design) on homepage
@@ -136,12 +144,19 @@
                 padding-bottom: 1rem;
                 margin-top: 1rem;
                 font-family: 'Noto Sans Mono', monospace;
-                font-weight: 500;
-                font-size: rem;
+                font-weight: 900;
+                font-size: 5rem;
                 color: white;
                 width: 90%;
                 margin-right: 5%;
                 margin-left: 5%;
+                color: transparent;
+                -webkit-text-stroke: 1px white;
+                background: url(/images/Untitled\ 10.gif);
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-position: 0 0;
+                animation: move 20s linear infinite;
             }
 
         // tablet - text style for subheading  (i like to build and design) on homepage
@@ -188,6 +203,19 @@
                 align-items: center;
                 overflow-wrap: wrap;
                 text-align: center;
+        }
+
+        // tablet - text style under heading
+        .sub_text2{
+                font-family: 'Noto Sans Mono', monospace;
+                margin-left: 1rem;
+                font-weight: 100;
+                font-size: 1.5rem;
+                color: white;
+                align-items: center;
+                overflow-wrap: wrap;
+                text-align: center;
+
         }
 
         // tablet - text style for blog and project 
@@ -266,7 +294,7 @@
                 margin-top: 1rem;
                 font-family: 'Noto Sans Mono', monospace;
                 font-weight: 900;
-                font-size: 5rem;
+                font-size: 7rem;
                 color: white;
                 width: 90%;
                 margin-right: 5%;
@@ -280,6 +308,17 @@
                 animation: move 20s linear infinite;
             }
 
+            // desktop - text style under heading
+            .sub_text2{
+                font-family: 'Noto Sans Mono', monospace;
+                margin-left: 1rem;
+                font-weight: 100;
+                font-size: 3rem;
+                color: white;
+                align-items: center;
+                overflow-wrap: wrap;
+                text-align: center;
+        }
 
             // desktop - text style for subheading  (i like to build and design) on homepage
          .title_sub1 {

@@ -19,10 +19,14 @@ Before coding - starts the designing and planning process. Inital wireframing an
 
  ### *Sitemap*
 ![sitemap](/images/Readme_images/Sitemap.png)
-![basic_schematics]()
-![mobile_wireframe]()
-![tablet_wireframe]()
-![desktop_wireframe]()
+ #### *Initial Schematic*
+![basic_schematics](/images/Readme_images/Schematics.jpg)
+ #### *Mobile Wireframe*
+![mobile_wireframe](/images/Readme_images/Mobile%20Wireframe.jpg)
+ #### *Tablet Wireframe*
+![tablet_wireframe](/images/Readme_images/Tablet%20Wireframe.jpg)
+ #### *Desktop Wireframe*
+![desktop_wireframe](/images/Readme_images/Desktop%20Wireframe.jpg)
 
 Even though using a wireframe is really useful, I found that it was only really good for positioning elements on a website. When intially designing and constructing the website, I was going for more of a pixel theme. This usese more lighter colors, but for some reason, it felt abit too 'empty'. Once I started using a dark background and brighter colours for the accents, the website looked more complete. Animations are also quite hard to plan and show on a wireframe. I intially left the space empty and the anaimations were added last to the website, with most of the inspiration coming from youtube  
 
@@ -41,7 +45,7 @@ The hover and highlight function have also been used to give the user feedback w
 Please see the below for a description of each webpage
 
 ### **Home Page**
-The homepage is the main page for the website and is what the user will first see upon entering. Abit of an introduction to what the site includes is revealed upon scrolling down.  
+The homepage is the main page for the website and is what the user will first see upon entering the website. Abit of an introduction to what the site includes is revealed upon scrolling down.
 
  #### *Mobile View Homepage*
 ![mobile_index](/images/screenshots/mobile_index.png)
@@ -51,8 +55,7 @@ The homepage is the main page for the website and is what the user will first se
 ![desktop_index](/images/screenshots/desktop_index.png)
 
 ### **About Me**
-The user will find information about me in this page. Upon entering the page, a slideshow is  
-
+The user will find information about me in this page. Upon entering this page the user will see a slideshow with pictures and also a 'typing' animation. Srolling down the main content of the page can be found. Also a copy of my resume can be downloaded.
 
  #### *Mobile View About Me Page*
 ![mobile_about_me]()
@@ -62,7 +65,7 @@ The user will find information about me in this page. Upon entering the page, a 
 ![desktop_about_me](/images/screenshots/desktop_about_me.png)
 
 ### **Projects**
-On this page, a list of projects I have worked on will be shown. To get more detail on the project, the user needs to click the post and this will take them to another webpage for that project. 
+On this page, a list of projects I have worked on will be shown. To get more detail on each project, the user needs to click the post and this will take them to another webpage for that project. 
 
  #### *Mobile View Projects Page*
 ![mobile_projects](/images/screenshots/mobile_projects.png)
@@ -73,6 +76,7 @@ On this page, a list of projects I have worked on will be shown. To get more det
 
 
 ### **Blog**
+On this page, a list of blogs I have created on will be shown. To get more detail on each blog, the user needs to click the post and this will take them to another webpage for that project. 
 
 #### *Mobile View Blog Page*
 ![mobile_blog](/images/screenshots/mobile_blog.png)
@@ -82,6 +86,13 @@ On this page, a list of projects I have worked on will be shown. To get more det
 ![desktop_blog](/images/screenshots/desktop_blog.png)
 
 ### **Contact**
+The contact page is for the user to contact me if they have any interesting to say or have any questions. The list of fields to be filled out include:
+- Name
+- Email
+- Subject
+- Message
+
+Once the user has filled out these fields, they can press the 'Send Message!' button to submit the information
 
 #### *Mobile View Contact Page*
 ![mobile_contact](/images/screenshots/mobile_contact.png)
@@ -89,3 +100,20 @@ On this page, a list of projects I have worked on will be shown. To get more det
 ![tablet_contact](/images/screenshots/tablet_contact.png)
 #### *Desktop View Contact Page*
 ![desktop_contact](/images/screenshots/desktop_contact.png)
+
+
+
+## **Contact links**
+
+Anushke - anushke.k@gmail.com 
+
+Project link - https://github.com/nush16/AnushkeKarunaratna_T1A2
+
+Netlify - https://anushkekaru.netlify.app/index.html
+
+Vimeo -
+
+Slide Deck - 
+
+## **Acknowledgments**
+
