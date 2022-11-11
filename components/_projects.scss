@@ -1,5 +1,6 @@
  // SCSS for projects page
 
+ //  main projects page shape style
 @mixin project_shape {
     background-color: rgba(38, 54, 45, 0.5);
     border-radius: 20px;
@@ -8,6 +9,7 @@
 // mobile view (320px)
 @media (min-width:320px) {
 
+  // mobile - project page style  
 @mixin projectpages_shape {
     background-color: rgba(38, 54, 45, 0.5);
     border-radius: 20px;
@@ -16,6 +18,7 @@
     margin-top: 1rem;
 }
 
+// mobile - project page layout
 @mixin project_frame {
     display: grid;
     gap: 2rem;
@@ -25,6 +28,7 @@
     margin-right: 5%;
 }
 
+// mobile - main project page positioning
 .project_posts {
     display: grid;
     gap: 1rem;
@@ -33,6 +37,7 @@
     margin-left: 2.5%;
     margin-right: 2.5%;
 
+     // mobile - project 1 style and positioning 
 .project1 {
     @include project_shape;
     box-shadow: 0 0 30px  hsl(132deg 93% 58%);
@@ -43,6 +48,7 @@
     }
     }
 
+    // mobile - project 2 style and positioning 
 .project2 {
     @include project_shape; 
     box-shadow: 0 0 30px  hsl(355deg 89% 58%);
@@ -53,6 +59,7 @@
     }
     }
 
+    // mobile - project 3 style and positioning 
 .project3 {
     @include project_shape;
     box-shadow: 0 0 30px   hsl(158deg 100% 46%);
@@ -65,6 +72,7 @@
     }
     }
 
+      // mobile - project 1 page style and positioning 
 .project1_layout {
         @include project_frame;
         .project1_img {
@@ -79,6 +87,7 @@
     }
     }
     
+    // mobile - project 2 page style and positioning 
 .project2_layout {
         @include project_frame;
         .project2_img {
@@ -93,6 +102,7 @@
             }
     }
 
+    // mobile - project 3 page style and positioning 
 .project3_layout {
         @include project_frame;
         .project3_img {
@@ -111,6 +121,7 @@
 // tablet view (820px)
 @media (min-width:820px) {
 
+     // tablet - project page style  
     @mixin projectpages_shape {
         background-color: rgba(38, 54, 45, 0.5);
         border-radius: 20px;
@@ -119,6 +130,7 @@
         margin-top: 1rem;
     }
     
+    // tablet - project page layout
     @mixin project_frame {
         display: grid;
         gap: 2rem;
@@ -128,6 +140,7 @@
         margin-right: 5%;
     }
     
+    // tablet - main project page positioning
     .project_posts {
         display: grid;
         gap: 3%;
@@ -137,6 +150,7 @@
         margin-right: 2.5%;
         margin-bottom: 4rem;
     
+        // tablet - project 1 style and positioning 
     .project1 {
         @include project_shape;
         box-shadow: 0 0 40px  hsl(132deg 93% 58%);
@@ -147,6 +161,7 @@
         }
         }
     
+        // tablet - project 2 style and positioning 
     .project2 {
         @include project_shape; 
         box-shadow: 0 0 40px  hsl(355deg 89% 58%);
@@ -157,6 +172,7 @@
         }
         }
     
+        // tablet - project 3 style and positioning 
     .project3 {
         @include project_shape;
         box-shadow: 0 0 40px   hsl(158deg 100% 46%);
@@ -169,6 +185,7 @@
         }
         }
     
+         // tablet - project 1 page style and positioning 
     .project1_layout {
             @include project_frame;
             .project1_img {
@@ -182,6 +199,7 @@
         }
         }
         
+         // tablet - project 2 page style and positioning 
     .project2_layout {
             @include project_frame;
             .project2_img {
@@ -195,6 +213,7 @@
                 }
         }
     
+         // tablet - project 3 page style and positioning 
     .project3_layout {
             @include project_frame;
             .project3_img {
@@ -214,6 +233,7 @@
 // desktop view (992px)
 @media (min-width:992px) {
 
+    // desktop - project page style 
     @mixin projectpages_shape {
         background-color: rgba(38, 54, 45, 0.5);
         border-radius: 20px;
@@ -222,6 +242,7 @@
         margin-top: 1rem;
     }
     
+    // desktop - project page layout
     @mixin project_frame {
         display: grid;
         gap: 2rem;
@@ -232,6 +253,7 @@
         
     }
     
+    // desktop - main project page positioning
     .project_posts {
         display: grid;
         gap: 3%;
@@ -242,6 +264,7 @@
         margin-bottom: 4rem;
         margin-top: 2rem;
     
+        // desktop - project 1 style and positioning
     .project1 {
         @include project_shape;
         box-shadow: 0 0 40px  hsl(132deg 93% 58%);
@@ -252,6 +275,7 @@
         }
         }
     
+        // desktop - project 2 style and positioning
     .project2 {
         @include project_shape; 
         box-shadow: 0 0 40px  hsl(355deg 89% 58%);
@@ -262,6 +286,7 @@
         }
         }
     
+        // desktop - project 3 style and positioning
     .project3 {
         @include project_shape;
         box-shadow: 0 0 40px   hsl(158deg 100% 46%);
@@ -275,6 +300,7 @@
         }
         }
     
+        // desktop - project 1 page style and positioning 
     .project1_layout {
             @include project_frame;
             .project1_img {
@@ -289,6 +315,7 @@
         }
         }
         
+        // desktop - project 2 page style and positioning 
     .project2_layout {
             @include project_frame;
             .project2_img {
@@ -303,6 +330,7 @@
                 }
         }
     
+        // desktop - project 3 page style and positioning 
     .project3_layout {
             @include project_frame;
             .project3_img {
@@ -317,6 +345,7 @@
                 }
         }
 
+        // hover effect over projects on main projects page
         .project_posts a.project_link:hover{
             -webkit-filter: brightness(70%);
             filter: brightness(70%)

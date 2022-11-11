@@ -1,8 +1,7 @@
  // SCSS for moving tiles
 
-// mobile view (320px)
-@media (min-width:320px) {
 
+// tiles position
 .tiles {
     position: relative;
     height: 1rem;
@@ -78,7 +77,13 @@
 
     .tiles_contact {
         @extend .tiles;
-        height: 6rem;
+        height: 13rem;
         margin-top: 0.8rem;
     }
-}
+
+    .tiles_b_p {
+        @extend .tiles;
+        height: 25rem;
+        margin-top: 0.8rem;
+    }
+

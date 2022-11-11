@@ -1,5 +1,6 @@
  // SCSS for blog page
 
+//  main blog page shape style
 @mixin blog_shape {
         background-color: rgba(38, 54, 45, 0.5);
         border-radius: 20px;
@@ -8,6 +9,7 @@
 // mobile view (320px)
 @media (min-width:320px) {
 
+// mobile - blog page style
 @mixin blogpages_shape {
         background-color: rgba(38, 54, 45, 0.5);
         border-radius: 20px;
@@ -17,6 +19,7 @@
     
     }
     
+// mobile - blog page layout
 @mixin blog_frame {
         display: grid;
         gap: 2rem;
@@ -26,6 +29,7 @@
         margin-right: 5%;
     }
 
+    // mobile - main blog page positioning
 .blog_posts {
     display: grid;
     gap: 1rem;
@@ -34,6 +38,7 @@
     margin-left: 2.5%;
     margin-right: 2.5%;
 
+    // mobile - blog 1 style and positioning 
 .blog1 {
     @include blog_shape;
     box-shadow: 0 0 30px hsl(322deg 100% 31%);
@@ -45,6 +50,7 @@
     }
     }
 
+    // mobile - blog 2 style and positioning 
 .blog2 {
     @include blog_shape;
     box-shadow: 0 0 30px  hsl(39deg 100% 50%);
@@ -55,6 +61,7 @@
         }
         }
 
+        // mobile - blog 3 style and positioning 
 .blog3 {
     @include blog_shape;
     box-shadow: 0 0 30px  hsl(66deg 100% 48%);
@@ -66,6 +73,7 @@
         }
         }
 
+        // mobile - blog 4 style and positioning 
 .blog4 {
     @include blog_shape;
     box-shadow: 0 0 30px  hsl(158deg 100% 46%);
@@ -77,6 +85,7 @@
          }
         }
 
+        // mobile - blog 5 style and positioning 
 .blog5 {
     @include blog_shape;
     box-shadow: 0 0 30px  hsl(180deg 73% 44%);
@@ -89,6 +98,7 @@
         }
     }
 
+    // mobile - blog 1 page style and positioning 
 .blog1_layout {
     @include blog_frame;
     .blog1_img {
@@ -103,6 +113,7 @@
         }
 }
 
+// mobile - blog 2 page style and positioning 
 .blog2_layout {
     @include blog_frame;
     .blog2_img {
@@ -117,6 +128,7 @@
         }
 }
 
+// mobile - blog 3 page style and positioning 
 .blog3_layout {
     @include blog_frame;
     .blog3_img {
@@ -131,6 +143,7 @@
         }
 }
 
+// mobile - blog 4 page style and positioning 
 .blog4_layout {
     @include blog_frame;
     .blog4_img {
@@ -145,6 +158,7 @@
         }
 }
 
+// mobile - blog 5 page style and positioning 
 .blog5_layout {
     @include blog_frame;
     .blog5_img {
@@ -163,6 +177,7 @@
 // tablet view (820px)
 @media (min-width:820px) {
 
+    // tablet - blog page style
 @mixin blogpages_shape {
         background-color: rgba(38, 54, 45, 0.5);
         border-radius: 20px;
@@ -172,6 +187,7 @@
     
     }
     
+    // tablet - blog page layout
 @mixin blog_frame {
         display: grid;
         gap: 1rem;
@@ -180,6 +196,7 @@
         margin-left: 15%;
     }
 
+    // tablet - main blog page positioning
     .blog_posts {
         display: grid;
         gap: 1rem;
@@ -188,6 +205,7 @@
         margin-left: 2.5%;
         margin-right: 2.5%;
     
+        // tablet - blog 1 style and positioning
     .blog1 {
         @include blog_shape;
         box-shadow: 0 0 30px hsl(322deg 100% 31%);
@@ -198,6 +216,7 @@
         }
         }
     
+         // tablet - blog 2 style and positioning
     .blog2 {
         @include blog_shape;
         box-shadow: 0 0 30px  hsl(39deg 100% 50%);
@@ -208,6 +227,7 @@
         }
         }
     
+         // tablet - blog 3 style and positioning
     .blog3 {
         @include blog_shape;
         box-shadow: 0 0 30px  hsl(66deg 100% 48%);
@@ -218,6 +238,7 @@
         }
         }
     
+         // tablet - blog 4 style and positioning
     .blog4 {
         @include blog_shape;
         box-shadow: 0 0 30px  hsl(158deg 100% 46%);
@@ -229,6 +250,7 @@
         }
         }
     
+         // tablet - blog 5 style and positioning
     .blog5 {
         @include blog_shape;
         box-shadow: 0 0 30px  hsl(180deg 73% 44%);
@@ -241,6 +263,7 @@
             }
         }
     
+         // tablet - blog 1 page style and positioning 
     .blog1_layout {
         @include blog_frame;
         .blog1_img {
@@ -255,6 +278,7 @@
             }
     }
     
+     // tablet - blog 2 page style and positioning 
     .blog2_layout {
         @include blog_frame;
         .blog2_img {
@@ -269,6 +293,7 @@
             }
     }
     
+     // tablet - blog 3 page style and positioning 
     .blog3_layout {
         @include blog_frame;
         .blog3_img {
@@ -283,6 +308,7 @@
             }
     }
     
+     // tablet - blog 4 page style and positioning 
     .blog4_layout {
         @include blog_frame;
         .blog4_img {
@@ -297,6 +323,7 @@
             }
     }
     
+     // tablet - blog 5 page style and positioning 
     .blog5_layout {
         @include blog_frame;
         .blog5_img {
@@ -315,6 +342,7 @@
 // desktop view (992px)
 @media (min-width:992px) {
 
+    // desktop - blog page style
         @mixin blogpages_shape {
                 background-color: rgba(38, 54, 45, 0.5);
                 border-radius: 20px;
@@ -324,6 +352,7 @@
             
             }
             
+    // desktop - blog page layout
         @mixin blog_frame {
                 display: grid;
                 gap: 1rem;
@@ -332,6 +361,7 @@
                 margin-left: 15%;
             }
         
+            // desktop - blog page layout
             .blog_posts {
                 display: grid;
                 gap: 3%;
@@ -342,7 +372,7 @@
                 margin-bottom: 6rem;
                 margin-top: 2rem;
             
-            
+            // desktop - blog 1 style and positioning 
             .blog1 {
                 @include blog_shape;
                 box-shadow: 0 0 40px hsl(322deg 100% 31%);
@@ -354,6 +384,7 @@
                 }
                 }
             
+                 // desktop - blog 2 style and positioning 
             .blog2 {
                 @include blog_shape;
                 box-shadow: 0 0 40px  hsl(39deg 100% 50%);
@@ -365,6 +396,7 @@
                 }
                 }
             
+                 // desktop - blog 3 style and positioning 
             .blog3 {
                 @include blog_shape;
                 box-shadow: 0 0 40px  hsl(66deg 100% 48%);
@@ -377,6 +409,7 @@
                 }
    
 
+                 // desktop - blog 4 style and positioning 
             .blog4 {
                 @include blog_shape;
                 box-shadow: 0 0 40px  hsl(158deg 100% 46%);
@@ -389,6 +422,7 @@
                 }
                 }
             
+                 // desktop - blog 5 style and positioning 
             .blog5 {
                 @include blog_shape;
                 box-shadow: 0 0 40px  hsl(180deg 73% 44%);
@@ -402,6 +436,7 @@
                     }
                 }
             
+                // desktop - blog 1 page style and positioning 
             .blog1_layout {
                 @include blog_frame;
                 margin-bottom: 3rem;
@@ -417,6 +452,7 @@
                     }
             }
             
+            // desktop - blog 2 page style and positioning 
             .blog2_layout {
                 @include blog_frame;
                 margin-bottom: 3rem;
@@ -432,6 +468,7 @@
                     }
             }
             
+            // desktop - blog 3 page style and positioning 
             .blog3_layout {
                 @include blog_frame;
                 margin-bottom: 3rem;
@@ -447,6 +484,7 @@
                     }
             }
             
+            // desktop - blog 4 page style and positioning 
             .blog4_layout {
                 @include blog_frame;
                 margin-bottom: 3rem;
@@ -462,6 +500,7 @@
                     }
             }
             
+            // desktop - blog 5 page style and positioning 
             .blog5_layout {
                 @include blog_frame;
                 margin-bottom: 3rem;
@@ -477,6 +516,7 @@
                     }
             }
 
+            // hover effect over blogs on main blog page
             .blog_posts a.blog_link:hover{
                 -webkit-filter: brightness(70%);
                 filter: brightness(70%)
