@@ -573,7 +573,7 @@ section i:nth-child(5n+3) {
 }
 
 .tiles_contact {
-  height: 13rem;
+  height: 25rem;
   margin-top: 0.8rem;
 }
 
@@ -1021,6 +1021,10 @@ button.send:hover {
     font-size: 1.3rem;
   }
 }
+.resume a.resumelink:hover {
+  filter: brightness(80%);
+}
+
 @media (min-width: 320px) {
   .about {
     width: 90%;

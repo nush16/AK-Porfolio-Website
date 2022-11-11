@@ -1,5 +1,10 @@
  // SCSS for about me page
 
+.resume a.resumelink:hover{
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%)
+}
+
 // mobile view (320px)
 @media (min-width:320px) {
   

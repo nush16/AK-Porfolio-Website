@@ -58,9 +58,9 @@ The homepage is the main page for the website and is what the user will first se
 The user will find information about me in this page. Upon entering this page the user will see a slideshow with pictures and also a 'typing' animation. Srolling down the main content of the page can be found. Also a copy of my resume can be downloaded.
 
  #### *Mobile View About Me Page*
-![mobile_about_me]()
+![mobile_about_me](/images/screenshots/mobile_about_me.png)
  #### *Tablet View About Me Page*
-![tablet_about_me]()
+![tablet_about_me](/images/screenshots/tablet_about_me.png)
  #### *Desktop View About Me Page*
 ![desktop_about_me](/images/screenshots/desktop_about_me.png)
 
@@ -101,7 +101,8 @@ Once the user has filled out these fields, they can press the 'Send Message!' bu
 #### *Desktop View Contact Page*
 ![desktop_contact](/images/screenshots/desktop_contact.png)
 
-
+## **Future Updates**
+In future updates, I will like to add JS to the website to make it more responsive. Also I would like to add support for more screen resolutions - the website becomes abit finicky between the tablet and desktop resolutions. The projects will also be added in a future update with more blogs. Keep tuned!  
 
 ## **Contact links**
 
