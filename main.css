@@ -1327,8 +1327,8 @@ button.send:hover {
     margin-right: 5%;
   }
   .about .slideshow {
-    width: 40.5rem;
-    height: 40rem;
+    width: 27.5rem;
+    height: 27rem;
     margin-top: -10%;
     margin-left: 1rem;
   }
@@ -1460,7 +1460,7 @@ button.send:hover {
     height: 22rem;
     width: 32rem;
     margin-top: 5rem;
-    margin-left: -2rem;
+    margin-left: 4rem;
   }
   .about_resume .resume::before {
     content: "";
