@@ -1414,27 +1414,27 @@ button.send:hover {
     background-color: rgb(38, 54, 45);
     border-radius: 20px;
     padding: 1rem;
-    height: 24rem;
-    width: 58rem;
-    margin-left: -0.5rem;
+    height: 35rem;
+    width: 40rem;
+    margin-left: 1rem;
     margin-top: 10%;
   }
   .about_resume .pabout::before {
     content: "";
     position: absolute;
     border-radius: 20px;
-    height: 25rem;
-    width: 59rem;
+    height: 36rem;
+    width: 41rem;
     margin-top: -1.5rem;
-    margin-left: -5.6rem;
+    margin-left: -1.6rem;
     background-image: linear-gradient(45deg, hsl(240deg, 100%, 20%) 0%, hsl(322deg, 100%, 31%) 9%, hsl(355deg, 89%, 58%) 18%, hsl(39deg, 100%, 50%) 27%, hsl(58deg, 100%, 48%) 36%, hsl(66deg, 100%, 48%) 45%, hsl(76deg, 100%, 49%) 55%, hsl(87deg, 100%, 50%) 64%, hsl(132deg, 93%, 58%) 73%, hsl(158deg, 100%, 46%) 82%, hsl(171deg, 100%, 42%) 91%, hsl(180deg, 73%, 44%) 100%);
     z-index: -1;
   }
   .about_resume .resume_text {
     display: flex;
     justify-content: center;
-    width: 15.3rem;
-    height: 7rem;
+    width: 17rem;
+    height: 6rem;
     border-radius: 50%;
     position: relative;
     margin-top: 8rem;
@@ -1443,12 +1443,12 @@ button.send:hover {
   .about_resume .resume_pic {
     display: flex;
     justify-content: center;
-    width: 9rem;
-    height: 9rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
     position: relative;
-    margin-top: -9rem;
-    margin-left: 21rem;
+    margin-top: -7rem;
+    margin-left: 23rem;
   }
   .about_resume .resume {
     font-family: "Noto Sans Mono", monospace;
