@@ -19,15 +19,15 @@ This is for anyone that is interested in my CSS and HTML skills or for just gett
 Before coding - I started the designing and planning process. Inital wireframing and planning for the website was done through Figma and Figjam. I also built the sitemap through Figjam, to understand how all the pages were going to come together. Please see below for the sitemap, basic schematics and wireframes.
 
  ### *Sitemap*
-![sitemap](/images/Readme_images/Sitemap.png)
+![sitemap](/images/docs/Sitemap.png)
  #### *Initial Schematic*
-![basic_schematics](/images/Readme_images/Schematics.jpg)
+![basic_schematics](/images/docs/Schematics.jpg)
  #### *Mobile Wireframe*
-![mobile_wireframe](/images/Readme_images/Mobile%20Wireframe.jpg)
+![mobile_wireframe](/images/docs/Mobile%20Wireframe.jpg)
  #### *Tablet Wireframe*
-![tablet_wireframe](/images/Readme_images/Tablet%20Wireframe.jpg)
+![tablet_wireframe](/images/docs/Tablet%20Wireframe.jpg)
  #### *Desktop Wireframe*
-![desktop_wireframe](/images/Readme_images/Desktop%20Wireframe.jpg)
+![desktop_wireframe](/images/docs/Desktop%20Wireframe.jpg)
 
 When intially designing and constructing the website, I was going for more of a pixel theme. This uses more of a lighter theme of colours, but for some reason the end result didnt look so good. Once changed to a darker background while using brighter colours as the accents, the website to me looked better. Animations were also quite hard to plan and show on the wireframes. I intially left the space empty and the animations were added later to the website, with most of the help and inspiration coming from youtube and other web developer sites  
 
@@ -49,42 +49,42 @@ Please see the below for a description of each webpage
 The homepage is the main page for the website and is what the user will first see upon entering the website. A mission statement and and introduction to the website is also included in the website.
 
  #### *Mobile View Homepage*
-![mobile_index](/images/screenshots/mobile_index.png)
+![mobile_index](/images/docs/mobile_index.png)
 #### *Tablet View Homepage*
-![tablet_index](/images/screenshots/tablet_index.png)
+![tablet_index](/images/docs/tablet_index.png)
 #### *Desktop View Homepage*
-![desktop_index](/images/screenshots/desktop_index.png)
+![desktop_index](/images/docs/desktop_index.png)
 
 ### **About Me**
 The user will find information about my background in this page. This page includes a slideshow with images and also a 'typing' animation. Srolling down the page, the main text content is found. Also a copy of my resume can be downloaded by clicking the resume image. Desktop format is also quite different to mobile and tablet format - this is due to vertical format leaving wide side bars in  desktop format. 
 
  #### *Mobile View About Me Page*
-![mobile_about_me](/images/screenshots/mobile_about_me.png)
+![mobile_about_me](/images/docs/mobile_about_me.png)
  #### *Tablet View About Me Page*
-![tablet_about_me](/images/screenshots/tablet_about_me.png)
+![tablet_about_me](/images/docs/tablet_about_me.png)
  #### *Desktop View About Me Page*
-![desktop_about_me](/images/screenshots/desktop_about_me.png)
+![desktop_about_me](/images/docs/desktop_about_me.png)
 
 ### **Projects**
 The page includes a list of projects I have worked. To get more detail on each project, the user needs to click the post (which is a link) and this will take them to the respective webpage.
 
  #### *Mobile View Projects Page*
-![mobile_projects](/images/screenshots/mobile_projects.png)
+![mobile_projects](/images/docs/mobile_projects.png)
 #### *Tablet View Projects Page*
-![tablet_projects](/images/screenshots/tablet_projects.png)
+![tablet_projects](/images/docs/tablet_projects.png)
 #### *Desktop View Projects Page*
-![desktop_projects](/images/screenshots/desktop_projects.png)
+![desktop_projects](/images/docs/desktop_projects.png)
 
 
 ### **Blog**
 This page includes a list of blogs I have created. To get more detail on each blog post, the user needs to click the post (which is a link) and this will take them to the respective webpage.
 
 #### *Mobile View Blog Page*
-![mobile_blog](/images/screenshots/mobile_blog.png)
+![mobile_blog](/images/docs/mobile_blog.png)
 #### *Tablet View Blog Page*
-![tablet_blog](/images/screenshots/tablet_blog.png)
+![tablet_blog](/images/docs/tablet_blog.png)
 #### *Desktop View Blog Page*
-![desktop_blog](/images/screenshots/desktop_blog.png)
+![desktop_blog](/images/docs/desktop_blog.png)
 
 ### **Contact**
 The contact page is for the user to contact me if they have any interesting to say or have any questions. The list of fields to be filled out include:
@@ -96,11 +96,11 @@ The contact page is for the user to contact me if they have any interesting to s
 Once the user has filled out these fields, they can press the 'Send Message!' button to submit there information
 
 #### *Mobile View Contact Page*
-![mobile_contact](/images/screenshots/mobile_contact.png)
+![mobile_contact](/images/docs/mobile_contact.png)
 #### *Tablet View Contact Page*
-![tablet_contact](/images/screenshots/tablet_contact.png)
+![tablet_contact](/images/docs/tablet_contact.png)
 #### *Desktop View Contact Page*
-![desktop_contact](/images/screenshots/desktop_contact.png)
+![desktop_contact](/images/docs/desktop_contact.png)
 
 ## **Future Updates**
 In future updates, I will like to add JS to the website to make it more responsive. Also I would like to add support for more screen resolutions - the website becomes abit finicky between the tablet and desktop resolutions. The projects will also be added in a future update with more blogs. Keep tuned!  
@@ -113,9 +113,7 @@ Project link - https://github.com/nush16/AnushkeKarunaratna_T1A2
 
 Netlify - https://anushkekaru.netlify.app/index.html
 
-Vimeo -
-
-Slide Deck - 
+Vimeo - https://vimeo.com/770360808 
 
 ## **Acknowledgments**
 
